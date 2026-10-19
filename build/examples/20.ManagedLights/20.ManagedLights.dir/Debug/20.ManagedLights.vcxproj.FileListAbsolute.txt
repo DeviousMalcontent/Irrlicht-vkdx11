@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\20.ManagedLights\20.ManagedLights.dir\Debug\20.ManagedLights.vcxproj.CopyComplete

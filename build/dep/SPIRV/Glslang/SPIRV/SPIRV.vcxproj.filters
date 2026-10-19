@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\GlslangToSpv.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\InReadableOrder.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\Logger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\SpvBuilder.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\SpvPostProcess.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\doc.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\SpvTools.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\disassemble.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\bitutils.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\spirv.hpp">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\GLSL.std.450.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\GLSL.ext.EXT.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\GLSL.ext.KHR.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\GlslangToSpv.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\hex_float.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\Logger.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\SpvBuilder.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\spvIR.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\doc.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\SpvTools.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\disassemble.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\GLSL.ext.AMD.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\GLSL.ext.NV.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\SPIRV\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{72B272B4-ACE8-3840-B13B-15C9D679B6AE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

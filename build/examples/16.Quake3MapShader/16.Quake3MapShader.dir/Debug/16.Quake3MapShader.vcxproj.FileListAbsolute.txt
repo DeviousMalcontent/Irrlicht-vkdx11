@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\16.Quake3MapShader\16.Quake3MapShader.dir\Debug\16.Quake3MapShader.vcxproj.CopyComplete

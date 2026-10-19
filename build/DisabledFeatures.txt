@@ -1,0 +1,7 @@
++ zlib: Simple data compression library <http://www.zlib.net>
++ freeimage: Support for commonly used graphics image formats <http://freeimage.sourceforge.net>
++ cg: C for graphics shader language <http://developer.nvidia.com/object/cg_toolkit.html>
++ OpenEXR: Load High dynamic range images <http://www.openexr.com/>
++ Python: Language bindings to use PROJECT from Python <http://www.python.org/>
++ Doxygen: Tool for building API documentation <http://doxygen.org>
++ Softimage: Softimage SDK needed for building XSIExporter <FALSE>

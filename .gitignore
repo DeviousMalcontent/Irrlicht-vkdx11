@@ -1,3 +1,7 @@
 /win
 /win2
 /winMG
+
+/build/lib/Debug/SPIRV-Tools-opt.lib
+/build/Irrlicht/irrlicht.dir/Debug/irrlicht.ilk
+/build/bin/debug/irrlicht.pdb

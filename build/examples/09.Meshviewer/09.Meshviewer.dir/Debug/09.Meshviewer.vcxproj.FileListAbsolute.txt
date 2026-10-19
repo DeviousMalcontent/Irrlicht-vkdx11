@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\09.Meshviewer\09.Meshviewer.dir\Debug\09.Meshviewer.vcxproj.CopyComplete

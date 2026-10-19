@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\19.MouseAndJoystick\19.MouseAndJoystick.dir\Debug\19.MouseAndJoystick.vcxproj.CopyComplete

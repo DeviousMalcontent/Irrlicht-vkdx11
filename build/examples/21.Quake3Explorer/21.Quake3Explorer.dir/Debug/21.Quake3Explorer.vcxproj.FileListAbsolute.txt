@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\21.Quake3Explorer\21.Quake3Explorer.dir\Debug\21.Quake3Explorer.vcxproj.CopyComplete

@@ -1,0 +1,15 @@
+App.xaml
+UI/Fonts/weblysleekuisb.ttf
+UI/Fonts/weblysleekuisl.ttf
+UI/Images/BackClouds.png
+UI/Images/FrontClouds.png
+UI/Images/FrontTrees.png
+UI/Images/LakeAndMountains.png
+UI/Images/SkyAndSun.jpg
+UI/MainMenu.xaml
+UI/MainWindow.xaml
+UI/MenuResources.xaml
+UI/OptionSelector.xaml
+UI/SettingsMenu.xaml
+UI/StartMenu.xaml
+UI/Theme/NoesisTheme.xaml

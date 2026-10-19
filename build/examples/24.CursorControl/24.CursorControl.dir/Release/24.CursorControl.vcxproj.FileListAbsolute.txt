@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\24.CursorControl\24.CursorControl.dir\Release\24.CursorControl.vcxproj.CopyComplete

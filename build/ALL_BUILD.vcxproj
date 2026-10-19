@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A543CC0B-A2A4-33A0-8704-99B2CEBB45FF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/irrlicht/Irrlicht-vkdx11/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindFreetype.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeCCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeCXXCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeRCCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeSystem.cmake;E:\irrlicht\Irrlicht-vkdx11\buildin_data.h.in.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\compiler\msvc\settings.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\defines.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\Dependencies.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\ExampleBuild.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\FindPkgMacros.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\HlslUtils.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\IOUtil.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\MacroLogFeature.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\ResourceCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\genrev.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\CheckBuildDir.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\CheckPlatform.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\EnsureVersion.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindCg.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindDirectX.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindDirectX11.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindFreeImage.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindOpenEXR.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindPCHSupport.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindSoftimage.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\Macros.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\options.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\platform\settings.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\platform\win\settings.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/irrlicht/Irrlicht-vkdx11/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindFreetype.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeCCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeCXXCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeRCCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeSystem.cmake;E:\irrlicht\Irrlicht-vkdx11\buildin_data.h.in.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\compiler\msvc\settings.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\defines.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\Dependencies.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\ExampleBuild.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\FindPkgMacros.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\HlslUtils.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\IOUtil.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\MacroLogFeature.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\ResourceCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\genrev.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\CheckBuildDir.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\CheckPlatform.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\EnsureVersion.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindCg.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindDirectX.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindDirectX11.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindFreeImage.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindOpenEXR.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindPCHSupport.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindSoftimage.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\Macros.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\options.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\platform\settings.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\platform\win\settings.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/irrlicht/Irrlicht-vkdx11/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindFreetype.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeCCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeCXXCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeRCCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeSystem.cmake;E:\irrlicht\Irrlicht-vkdx11\buildin_data.h.in.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\compiler\msvc\settings.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\defines.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\Dependencies.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\ExampleBuild.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\FindPkgMacros.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\HlslUtils.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\IOUtil.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\MacroLogFeature.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\ResourceCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\genrev.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\CheckBuildDir.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\CheckPlatform.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\EnsureVersion.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindCg.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindDirectX.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindDirectX11.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindFreeImage.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindOpenEXR.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindPCHSupport.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindSoftimage.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\Macros.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\options.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\platform\settings.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\platform\win\settings.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/irrlicht/Irrlicht-vkdx11/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindFreetype.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\SelectLibraryConfigurations.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeCCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeCXXCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeRCCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\3.27.5\CMakeSystem.cmake;E:\irrlicht\Irrlicht-vkdx11\buildin_data.h.in.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\compiler\msvc\settings.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\defines.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\Dependencies.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\ExampleBuild.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\FindPkgMacros.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\HlslUtils.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\IOUtil.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\MacroLogFeature.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\extensions\ResourceCompiler.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\genrev.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\CheckBuildDir.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\CheckPlatform.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\EnsureVersion.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindCg.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindDirectX.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindDirectX11.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindFreeImage.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindOpenEXR.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindPCHSupport.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\FindSoftimage.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\macros\Macros.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\options.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\platform\settings.cmake;E:\irrlicht\Irrlicht-vkdx11\cmake\platform\win\settings.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\irrlicht\Irrlicht-vkdx11\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\ZERO_CHECK.vcxproj">
+      <Project>{0AEF8AC9-A006-3AC3-91F1-C219F7A16A86}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\01.HelloWorld\01.HelloWorld.vcxproj">
+      <Project>{2E91ABC6-2BF7-3622-9A88-724BA8695E29}</Project>
+      <Name>01.HelloWorld</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\02.Quake3Map\02.Quake3Map.vcxproj">
+      <Project>{B3C9713D-4200-362E-9845-174146BC853D}</Project>
+      <Name>02.Quake3Map</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\03.CustomSceneNode\03.CustomSceneNode.vcxproj">
+      <Project>{B590F5C9-47F9-33F3-AED7-4494E7767445}</Project>
+      <Name>03.CustomSceneNode</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\04.Movement\04.Movement.vcxproj">
+      <Project>{DC967344-AD23-3E5C-B27B-74A5C5D54DF4}</Project>
+      <Name>04.Movement</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\05.UserInterface\05.UserInterface.vcxproj">
+      <Project>{5A7C2D7A-84F0-3079-B93F-DFA6736A2376}</Project>
+      <Name>05.UserInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\06.2DGraphics\06.2DGraphics.vcxproj">
+      <Project>{DE93B274-BADA-35E8-9E17-CF889E5B67E0}</Project>
+      <Name>06.2DGraphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\07.Collision\07.Collision.vcxproj">
+      <Project>{728F1807-0D07-35C0-BCE5-C875C8F51FB6}</Project>
+      <Name>07.Collision</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\08.SpecialFX\08.SpecialFX.vcxproj">
+      <Project>{8E28C546-3334-3702-A303-E566F8914232}</Project>
+      <Name>08.SpecialFX</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\09.Meshviewer\09.Meshviewer.vcxproj">
+      <Project>{68024913-3E35-3F03-9477-549E7760D9A2}</Project>
+      <Name>09.Meshviewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\11.PerPixelLighting\11.PerPixelLighting.vcxproj">
+      <Project>{467EBB9E-6280-3AF5-B2B0-643B5C252A58}</Project>
+      <Name>11.PerPixelLighting</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\12.TerrainRendering\12.TerrainRendering.vcxproj">
+      <Project>{20302869-5F39-33F1-A85A-229E439526F2}</Project>
+      <Name>12.TerrainRendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\13.RenderToTexture\13.RenderToTexture.vcxproj">
+      <Project>{F84217CD-8A3F-3D90-A579-159811B18FB4}</Project>
+      <Name>13.RenderToTexture</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\15.LoadIrrFile\15.LoadIrrFile.vcxproj">
+      <Project>{C8EA91C7-D395-3E55-8232-B442EBF24680}</Project>
+      <Name>15.LoadIrrFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\16.Quake3MapShader\16.Quake3MapShader.vcxproj">
+      <Project>{67AC9D32-2D54-3FBD-B962-89A8D6A2F5A9}</Project>
+      <Name>16.Quake3MapShader</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\17.HelloWorld_Mobile\17.HelloWorld_Mobile.vcxproj">
+      <Project>{BDC4D6DF-A203-38AA-91C8-72CE01E2C232}</Project>
+      <Name>17.HelloWorld_Mobile</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\18.SplitScreen\18.SplitScreen.vcxproj">
+      <Project>{C83A7519-14EA-3E24-9393-89C5BED0E5F3}</Project>
+      <Name>18.SplitScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\19.MouseAndJoystick\19.MouseAndJoystick.vcxproj">
+      <Project>{58AD19E6-FBB4-3855-9403-D40EFA2A272C}</Project>
+      <Name>19.MouseAndJoystick</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\20.ManagedLights\20.ManagedLights.vcxproj">
+      <Project>{9C925ED2-46EC-3433-B381-A931D880EDE3}</Project>
+      <Name>20.ManagedLights</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\21.Quake3Explorer\21.Quake3Explorer.vcxproj">
+      <Project>{D29BCAC3-AF97-3728-9F15-87F8BD9B4852}</Project>
+      <Name>21.Quake3Explorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\22.MaterialViewer\22.MaterialViewer.vcxproj">
+      <Project>{8FCC747D-F846-360D-8371-42DD5494985A}</Project>
+      <Name>22.MaterialViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\23.SMeshHandling\23.SMeshHandling.vcxproj">
+      <Project>{2CFA418D-E7AE-3BB7-82D5-28AF90939787}</Project>
+      <Name>23.SMeshHandling</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\24.CursorControl\24.CursorControl.vcxproj">
+      <Project>{F6AC075A-BA39-3821-B456-5A3EF372D481}</Project>
+      <Name>24.CursorControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\25.XmlHandling\25.XmlHandling.vcxproj">
+      <Project>{5FFB4137-94D2-3F7A-AD9F-B86EA7D9817A}</Project>
+      <Name>25.XmlHandling</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\26.OcclusionQuery\26.OcclusionQuery.vcxproj">
+      <Project>{7185AFD5-3A92-3927-8FEC-4ECA6F1656F6}</Project>
+      <Name>26.OcclusionQuery</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\32.NoesisGUI\32.NoesisGUI.vcxproj">
+      <Project>{442664FD-F624-3DCB-9815-8924450F6572}</Project>
+      <Name>32.NoesisGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\33.NoesisGUIWindow\33.NoesisGUIWindow.vcxproj">
+      <Project>{F388DC2A-0158-3C5A-B613-D3853B70026B}</Project>
+      <Name>33.NoesisGUIWindow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\contrib\CFramework\CFramework.vcxproj">
+      <Project>{86AE6B25-DCD2-36A7-9DB7-51DED91F6BB3}</Project>
+      <Name>CFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\Irrlicht\RenderEngines\Vulkan\CVulkan.vcxproj">
+      <Project>{AAEC0E40-6A4B-31AE-956C-1A2FA757D1D8}</Project>
+      <Name>CVulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\examples\Demo\Demo.vcxproj">
+      <Project>{2F9DBE07-BD21-3B37-B466-A98BEB5469D0}</Project>
+      <Name>Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\Irrlicht\RenderEngines\Direct3D11\Direct3D11.vcxproj">
+      <Project>{EAC59D7D-5099-3060-8FDA-4288D2C79760}</Project>
+      <Name>Direct3D11</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\Irrlicht\RenderEngines\DirectX9\DirectX9.vcxproj">
+      <Project>{AA01E423-5ED8-3BC0-92BC-775B7963D590}</Project>
+      <Name>DirectX9</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\Glslang\hlsl\HLSL.vcxproj">
+      <Project>{FF8A98E4-9D71-354E-9F95-9A0FE155F97C}</Project>
+      <Name>HLSL</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\Irrlicht\RenderEngines\OpenGL\IrrOpenGL.vcxproj">
+      <Project>{AE3EB615-DD81-3E3E-B159-3A02B2650109}</Project>
+      <Name>IrrOpenGL</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\Noesis\NoesisApp.vcxproj">
+      <Project>{F9193C0F-1E3F-36C6-8B87-2C737679FB1A}</Project>
+      <Name>NoesisApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\Glslang\OGLCompilersDLL\OGLCompiler.vcxproj">
+      <Project>{3A61444E-AADD-355C-BE45-D71DFDBEA61F}</Project>
+      <Name>OGLCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\Glslang\glslang\OSDependent\Windows\OSDependent.vcxproj">
+      <Project>{7B537A58-324B-39A3-8E0C-F13F121D09F9}</Project>
+      <Name>OSDependent</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\Glslang\SPIRV\SPIRV.vcxproj">
+      <Project>{39A1EC06-F12C-344D-A638-7A3005A40C84}</Project>
+      <Name>SPIRV</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\SPIRV-Tools\source\SPIRV-Tools.vcxproj">
+      <Project>{6B3BBB15-D5A2-35CC-8912-DBCF096C6855}</Project>
+      <Name>SPIRV-Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\SPIRV-Tools\source\opt\SPIRV-Tools-opt.vcxproj">
+      <Project>{C0C00DDD-A951-36B6-BE31-1A786C65B158}</Project>
+      <Name>SPIRV-Tools-opt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\Glslang\SPIRV\SPVRemapper.vcxproj">
+      <Project>{E8309C04-DD06-3846-BB3C-714A602D0247}</Project>
+      <Name>SPVRemapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\zlib\ZLIB.vcxproj">
+      <Project>{D3E592FD-AB6F-3BE8-A98B-386B3169A2E8}</Project>
+      <Name>ZLIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\Glslang\glslang\glslang.vcxproj">
+      <Project>{95BCBA1C-C773-31A0-90B9-9D62204092E2}</Project>
+      <Name>glslang</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\Irrlicht\irrlicht.vcxproj">
+      <Project>{2D318CA7-C5BB-3C9D-B407-B42B0F64B8FA}</Project>
+      <Name>irrlicht</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\jpeglib\libjpeg.vcxproj">
+      <Project>{47D55914-6527-30ED-B79D-E28E4584658A}</Project>
+      <Name>libjpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\dep\libpng\libpng.vcxproj">
+      <Project>{66022D3D-5C03-323C-804F-E71674488721}</Project>
+      <Name>libpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\contrib\ResourceCompiler\rs.vcxproj">
+      <Project>{795E13A5-E797-3373-9870-5192D17020FE}</Project>
+      <Name>rs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

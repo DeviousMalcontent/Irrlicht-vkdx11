@@ -1,0 +1,2097 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\C3DSMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAlignTextTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAnimatedMeshHalfLife.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAnimatedMeshMD2.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAnimatedMeshMD3.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAnimatedMeshSceneNode.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAttributes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CB3DMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBSPMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBillboardSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBlankTextElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBoneSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBurningShader_Raster_Reference.cpp">
+      <Filter>video\Burning Video</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CCSMLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CCameraSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CCgMaterialRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CColladaFileLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CColladaMeshWriter.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CColorConverter.cpp">
+      <Filter>video\Null</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CColorTextTag.cpp">
+      <Filter>video\Null</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CCubeSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDMFLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDefaultGUIElementFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDefaultSceneNodeAnimatorFactory.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDefaultSceneNodeFactory.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDepthBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDummyTransformationSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CEmptySceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CFPSCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CFileList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CFileSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CFontTextTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIButton.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUICheckBox.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUICodeEditor.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIColorSelectDialog.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIComboBox.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIContextMenu.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIEditBox.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIEnvironment.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIExtWindow.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIExtendedText.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIFileOpenDialog.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIFileSelector.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIFont.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIGfxStatus.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIImage.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIImageList.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIInOutFader.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIListBox.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIMenu.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIMeshViewer.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIMessageBox.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIModalScreen.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIPanel.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIProfiler.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIProgressBar.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIScrollBar.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUISkin.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUISpinBox.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUISpriteBank.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIStaticText.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUITTFont.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUITabControl.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUITable.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIToolBar.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUITreeView.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIWindow.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGeometryCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CHLineTextElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CHLineTextTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImage.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderBMP.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderDDS.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderJPG.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderPCX.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderPNG.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderPPM.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderPSD.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderRGB.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderTGA.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderWAL.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageTextElement.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageTextTag.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterBMP.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterJPG.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterPCX.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterPNG.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterPPM.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterPSD.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterTGA.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceConsole.cpp">
+      <Filter>System\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceFB.cpp">
+      <Filter>System\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceLinux.cpp">
+      <Filter>System\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceSDL.cpp">
+      <Filter>System\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceStub.cpp">
+      <Filter>System\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceWin32.cpp">
+      <Filter>System\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceWinCE.cpp">
+      <Filter>System\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrMeshWriter.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLMTSMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLWOMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLightSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLimitReadFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMD2MeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMD3MeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMS3DMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMY3DMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMemoryFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMemoryReadWriteFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMeshCache.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMeshManipulator.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMeshSceneNode.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMetaTriangleSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMountPointReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CNPKReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CNullDriver.cpp">
+      <Filter>video\Null</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COBJMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COBJMeshWriter.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COCTLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COSOperator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COctreeSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COctreeTriangleSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COgreMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CPLYMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CPLYMeshWriter.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CPakReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleAnimatedMeshSceneNodeEmitter.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleAttractionAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleBoxEmitter.cpp">
+      <Filter>scene\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleCylinderEmitter.cpp">
+      <Filter>scene\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleFadeOutAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleGravityAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleMeshEmitter.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticlePointEmitter.cpp">
+      <Filter>scene\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleRingEmitter.cpp">
+      <Filter>scene\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleRotationAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleScaleAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleSphereEmitter.cpp">
+      <Filter>scene\emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleSystemSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CPlainTextElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CProfiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CQ3LevelMesh.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CQuake3ShaderSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CReadFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSMFMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSTLMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSTLMeshWriter.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneCollisionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneLoaderIrr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorCameraFPS.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorCameraMaya.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorCollisionResponse.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorDelete.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorFlyCircle.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorFlyStraight.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorFollowSpline.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorRotation.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorTexture.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CShadowVolumeSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSkinnedMesh.cpp">
+      <Filter>mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSkyBoxSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSkyDomeSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftwareDriver.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftwareDriver2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftwareTexture.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftwareTexture2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSphereSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRFlat.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRFlatWire.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRGouraud.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRGouraud2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRGouraudAlpha2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRGouraudAlphaNoZ2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRGouraudWire.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRNormalMap.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRStencilShadow.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureBlend.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureDetailMap2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureFlat.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureFlatWire.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraud.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraud2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudAdd.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudAdd2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudAddNoZ2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudAlpha.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudAlphaNoZ.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudNoZ.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudNoZ2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudVertexAlpha2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraudWire.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureLightMap2_Add.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureLightMap2_M1.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureLightMap2_M2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureLightMap2_M4.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureLightMapGouraud2_M4.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureWire2.cpp">
+      <Filter>video\Software</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTabTextTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTarReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTerrainSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTerrainTriangleSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTextSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTriangleBBSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTriangleSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CVideoModeList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CVolumeLightSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CWADReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CWaterSurfaceSceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CWriteFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CXMLReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CXMLWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CXMeshFileLoader.cpp">
+      <Filter>mesh\File</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CZBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CZipReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IBurningShader.cpp">
+      <Filter>video\Burning Video</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\Irrlicht.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\Line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\SGraph2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\TextArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\enriched_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\irrXML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\os.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\aescrypt.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\aeskey.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\aestab.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\fileenc.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\hmac.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\prng.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\pwd2key.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\sha1.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\aesGladman\sha2.cpp">
+      <Filter>aesGladman</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\bzip2\blocksort.c">
+      <Filter>bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\bzip2\bzlib.c">
+      <Filter>bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\bzip2\crctable.c">
+      <Filter>bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\bzip2\decompress.c">
+      <Filter>bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\bzip2\bzcompress.c">
+      <Filter>bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\bzip2\huffman.c">
+      <Filter>bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\bzip2\randtable.c">
+      <Filter>bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\lzma\LzmaDec.c">
+      <Filter>lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\util\extra_string.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CCommandBuffer.cpp">
+      <Filter>RenderEngines\General</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CDynamicVertexBufferObject.cpp">
+      <Filter>RenderEngines\General</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CEventQuery.cpp">
+      <Filter>RenderEngines\General</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CIrrShader.cpp">
+      <Filter>RenderEngines\General</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CIrrVertexDeclaration.cpp">
+      <Filter>RenderEngines\General</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\BuiltInFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\C3DSMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAlignTextTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAnimatedMeshHalfLife.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAnimatedMeshMD2.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAnimatedMeshMD3.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAnimatedMeshSceneNode.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAttributeImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CAttributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CB3DMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBSPMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBillboardSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBlankTextElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBlit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CBoneSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CCSMLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CCameraSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CCgMaterialRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CColladaFileLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CColladaMeshWriter.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CColorConverter.h">
+      <Filter>video\Null</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CColorTextTag.h">
+      <Filter>video\Null</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CCubeSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDMFLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDefaultGUIElementFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDefaultSceneNodeAnimatorFactory.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDefaultSceneNodeFactory.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDepthBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CDummyTransformationSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CEmptySceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CFPSCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CFileList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CFileSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CFontTextTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUICheckBox.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUICodeEditor.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIColorSelectDialog.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIComboBox.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIContextMenu.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIEditBox.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIEnvironment.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIExtWindow.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIExtendedText.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIFileOpenDialog.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIFileSelector.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIFont.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIGfxStatus.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIImage.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIImageList.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIInOutFader.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIListBox.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIMenu.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIMeshViewer.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIMessageBox.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIModalScreen.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIPanel.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIProfiler.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIProgressBar.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIScrollBar.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUISkin.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUISpinBox.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUISpriteBank.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIStaticText.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUITTFont.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUITabControl.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUITable.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIToolBar.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUITreeView.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGUIWindow.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CGeometryCreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CHLineTextElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CHLineTextTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImage.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderBMP.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderDDS.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderJPG.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderPCX.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderPNG.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderPPM.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderPSD.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderRGB.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderTGA.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageLoaderWAL.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageTextElement.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageTextTag.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterBMP.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterJPG.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterPCX.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterPNG.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterPPM.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterPSD.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CImageWriterTGA.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceConsole.h">
+      <Filter>System\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceFB.h">
+      <Filter>System\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceLinux.h">
+      <Filter>System\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceSDL.h">
+      <Filter>System\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceStub.h">
+      <Filter>System\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceWin32.h">
+      <Filter>System\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrDeviceWinCE.h">
+      <Filter>System\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CIrrMeshWriter.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLMTSMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLWOMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLightSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLimitReadFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMD2MeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMD3MeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMS3DMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMY3DHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMY3DMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMemoryFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMemoryReadWriteFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMeshCache.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMeshManipulator.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMeshSceneNode.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMetaTriangleSelector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMountPointReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CNPKReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CNullDriver.h">
+      <Filter>video\Null</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COBJMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COBJMeshWriter.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COCTLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COSOperator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COctreeSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COctreeTriangleSelector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\COgreMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CPLYMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CPLYMeshWriter.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CPakReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleAnimatedMeshSceneNodeEmitter.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleAttractionAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleBoxEmitter.h">
+      <Filter>scene\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleCylinderEmitter.h">
+      <Filter>scene\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleFadeOutAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleGravityAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleMeshEmitter.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticlePointEmitter.h">
+      <Filter>scene\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleRingEmitter.h">
+      <Filter>scene\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleRotationAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleScaleAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleSphereEmitter.h">
+      <Filter>scene\emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CParticleSystemSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CPlainTextElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CProfiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CQ3LevelMesh.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CQuake3ShaderSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CReadFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSMFMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSTLMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSTLMeshWriter.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneCollisionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneLoaderIrr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorCameraFPS.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorCameraMaya.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorCollisionResponse.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorDelete.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorFlyCircle.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorFlyStraight.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorFollowSpline.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorRotation.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSceneNodeAnimatorTexture.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CShadowVolumeSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSkinnedMesh.h">
+      <Filter>mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSkyBoxSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSkyDomeSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftware2MaterialRenderer.h">
+      <Filter>video\Software</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftwareDriver.h">
+      <Filter>video\Software</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftwareDriver2.h">
+      <Filter>video\Software</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftwareTexture.h">
+      <Filter>video\Software</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSoftwareTexture2.h">
+      <Filter>video\Software</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CSphereSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTRTextureGouraud.h">
+      <Filter>video\Software</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTabTextTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTarReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTerrainSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTerrainTriangleSelector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTextSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTriangleBBSelector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CTriangleSelector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CVideoModeList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CVolumeLightSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CWADReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CWaterSurfaceSceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CWriteFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CXMLReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CXMLReaderImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CXMLWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CXMeshFileLoader.h">
+      <Filter>mesh\File</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CZBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CZipReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\EProfileIDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IAttribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IBurningShader.h">
+      <Filter>video\Burning Video</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IDepthBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IExtendedText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IGraph2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IImagePresenter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\ISceneNodeAnimatorFinishing.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\ITextElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\ITextTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\ITriangleRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IZBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\IncrementorT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\Line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\Octree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\Range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\S2DVertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\S4DVertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\SGraph2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\SoftwareDriver2_compile_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\SoftwareDriver2_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\TextArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\clipRects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\dmfsupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\enriched_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\os.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\wglext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\CDynamicMeshBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\CGUIButton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\CIndexBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\CMeshBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\CVertexBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EAttributes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ECullingTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EDebugSceneTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EDeviceTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EDriverFeatures.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EDriverTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EFocusFlags.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EGUIAlignment.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EGUIElementTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EHardwareBufferFlags.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EMaterialFlags.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EMaterialTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EMeshWriterEnums.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EMessageBoxFlags.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EPrimitiveTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ESceneNodeAnimatorTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ESceneNodeTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\EShaderTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ETerrainElements.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IAnimatedMesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IAnimatedMeshMD2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IAnimatedMeshMD3.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IAnimatedMeshSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IAttributeExchangingObject.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IAttributes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IBillboardSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IBillboardTextSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IBoneSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ICameraSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IColladaMeshWriter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IContextManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ICursorControl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IDummyTransformationSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IDynamicMeshBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IEventReceiver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IFileArchive.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IFileList.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IFileSystem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IForm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGPUProgrammingServices.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIButton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUICheckBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIColorSelectDialog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIComboBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIContextMenu.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIEditBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIElement.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIElementFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIEnvironment.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIFileOpenDialog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIFont.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIFontBitmap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIImage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIImageList.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIInOutFader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIListBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIMeshViewer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIProfiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIScrollBar.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUISkin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUISpinBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUISpriteBank.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIStaticText.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUITabControl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUITable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIToolbar.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUITreeView.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGUIWindow.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IGeometryCreator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IHardwareBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IImage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IImageLoader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IImageWriter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IIndexBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ILightManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ILightSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ILogger.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMappedFile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMaterialRenderer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMaterialRendererServices.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMeshBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMeshCache.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMeshLoader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMeshManipulator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMeshSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMeshWriter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IMetaTriangleSelector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IOSOperator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleAffector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleAnimatedMeshSceneNodeEmitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleAttractionAffector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleBoxEmitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleCylinderEmitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleEmitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleFadeOutAffector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleGravityAffector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleMeshEmitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleRingEmitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleRotationAffector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleSphereEmitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IParticleSystemSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IProfiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IQ3LevelMesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IQ3Shader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IRandomizer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IReadFile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IReferenceCounted.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IRenderTarget.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneCollisionManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneLoader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneNodeAnimator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneNodeAnimatorCameraFPS.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneNodeAnimatorCameraMaya.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneNodeAnimatorCollisionResponse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneNodeAnimatorFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneNodeFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISceneUserDataSerializer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IShader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IShaderConstantSetCallBack.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IShadowVolumeSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ISkinnedMesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ITerrainSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ITextSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ITexture.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ITimer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\ITriangleSelector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IVertexBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IVideoDriver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IVideoModeList.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IVolumeLightSceneNode.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IWriteFile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IXMLReader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IXMLWriter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IrrCompileConfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\IrrlichtDevice.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\Keycodes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\S3DVertex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SAnimatedMesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SColor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SExposedVideoData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SIrrCreationParameters.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SKeyMap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SLight.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SMaterial.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SMaterialLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SMesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SMeshBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SMeshBufferLightMap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SMeshBufferTangents.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SParticle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SSharedMeshBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SSkinMeshBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SVertexElement.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SVertexIndex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SVertexManipulator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SViewFrustum.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\SceneParameters.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\aabbox3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\coreutil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\dimension2d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\driverChoice.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\exampleHelper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\fast_atof.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\heapsort.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrAllocator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrArray.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrList.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrMap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrMath.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrString.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrTypes_old.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrUString.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrXML.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrlicht.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrpack.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\irrunpack.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\line2d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\line3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\matrix4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\matrix4x3.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\path.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\plane3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\position2d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\quaternion.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\rect.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\triangle3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\vector2d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\include\vector3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CCommandBuffer.h">
+      <Filter>RenderEngines\General</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CCommonDefines.h">
+      <Filter>RenderEngines\General</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CDynamicVertexBufferObject.h">
+      <Filter>RenderEngines\General</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CEventQuery.h">
+      <Filter>RenderEngines\General</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CIrrOcculisionQuery.h">
+      <Filter>RenderEngines\General</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CIrrShader.h">
+      <Filter>RenderEngines\General</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CIrrTimerQuery.h">
+      <Filter>RenderEngines\General</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\General\CIrrVertexDeclaration.h">
+      <Filter>RenderEngines\General</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D6F1EC9F-315F-3C26-AF72-28C27733A9C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{BF09365E-7396-3127-8F4F-89E6A7646607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderEngines">
+      <UniqueIdentifier>{A10B92D9-EF70-3EEB-A95D-BF91AE99A46E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderEngines\General">
+      <UniqueIdentifier>{7AC03D8F-E8E3-3F62-844F-A16F74FF2171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9878487-F479-3FD1-8D90-F73915B0985A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{7D41EE52-A245-3040-895B-6A370EC508B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Device">
+      <UniqueIdentifier>{B65FAA23-72BF-345B-99C7-00E1FA0924D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aesGladman">
+      <UniqueIdentifier>{BC8ABE10-A6A1-3DCC-B4EA-7785AA0B3253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bzip2">
+      <UniqueIdentifier>{D77CF5B2-36C7-3643-B60F-1FC1EF5A40D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{5A80AC76-11CA-3C07-9CA5-9AB4BBFF4996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{EEF98F87-94E1-32C0-B49E-1B50D2104D2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma">
+      <UniqueIdentifier>{7E4B1749-7909-3331-AC7B-136F3D8F70F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mesh">
+      <UniqueIdentifier>{18A126A1-A614-35ED-AAAD-3EE7F8BAE972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mesh\File">
+      <UniqueIdentifier>{4AF41B0E-3DC0-3908-9987-19DEFD862BCC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{4A6A6B32-6B1C-3F80-8410-FE444BD7BC41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene\emitter">
+      <UniqueIdentifier>{12E1F754-E977-3324-9966-6BB4C6951C63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{E3D68B3F-E402-382E-9F77-94E38A3A6375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video">
+      <UniqueIdentifier>{4532C8E5-F79B-3B4B-BE01-A0B620C687A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video\Burning Video">
+      <UniqueIdentifier>{4DD89AC2-615A-3D24-83C9-3703C1438EA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video\Null">
+      <UniqueIdentifier>{EE4D457D-7597-3CD6-8D31-58C96470DE4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="video\Software">
+      <UniqueIdentifier>{A636B45F-0B17-3765-BD3B-D93FE1AC2B05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

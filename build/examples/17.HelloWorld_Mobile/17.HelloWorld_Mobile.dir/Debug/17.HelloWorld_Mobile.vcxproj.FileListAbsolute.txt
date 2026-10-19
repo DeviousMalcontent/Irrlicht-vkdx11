@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\17.HelloWorld_Mobile\17.HelloWorld_Mobile.dir\Debug\17.HelloWorld_Mobile.vcxproj.CopyComplete

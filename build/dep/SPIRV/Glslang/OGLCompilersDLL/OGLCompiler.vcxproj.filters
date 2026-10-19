@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\OGLCompilersDLL\InitializeDll.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\OGLCompilersDLL\InitializeDll.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\OGLCompilersDLL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{72B272B4-ACE8-3840-B13B-15C9D679B6AE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

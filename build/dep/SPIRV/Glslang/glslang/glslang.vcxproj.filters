@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\glslang_tab.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\attribute.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\Constant.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\iomapper.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\InfoSink.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\Initialize.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\IntermTraverse.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\Intermediate.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\ParseContextBase.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\ParseHelper.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\PoolAlloc.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\RemoveTree.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\Scan.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\ShaderLang.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\SymbolTable.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\Versions.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\intermOut.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\limits.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\linkValidate.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\parseConst.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\reflection.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\preprocessor\Pp.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\preprocessor\PpAtom.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\preprocessor\PpContext.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\preprocessor\PpScanner.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\preprocessor\PpTokens.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\propagateNoContraction.cpp">
+      <Filter>MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\GenericCodeGen\CodeGen.cpp">
+      <Filter>GenericCodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\GenericCodeGen\Link.cpp">
+      <Filter>GenericCodeGen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Public\ShaderLang.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\arrays.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\BaseTypes.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\Common.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\ConstantUnion.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\InfoSink.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\InitializeGlobals.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\intermediate.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\PoolAlloc.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\ResourceLimits.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\revision.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\ShHandle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\Include\Types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\attribute.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\glslang_tab.cpp.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\gl_types.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\Initialize.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\iomapper.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\LiveTraverser.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\localintermediate.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\ParseHelper.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\reflection.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\RemoveTree.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\Scan.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\ScanContext.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\SymbolTable.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\Versions.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\parseVersions.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\propagateNoContraction.h">
+      <Filter>MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\preprocessor\PpContext.h">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\preprocessor\PpTokens.h">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\Glslang\glslang\MachineIndependent\glslang.y">
+      <Filter>MachineIndependent</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GenericCodeGen">
+      <UniqueIdentifier>{EEDE4E01-6EA8-3A22-A773-AFAFA00B0A53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{8BE230D1-13BF-3DF7-AB8A-C220405C0177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MachineIndependent">
+      <UniqueIdentifier>{8AAE2847-D538-3DC2-BFD2-FD6F607AD0E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MachineIndependent\Preprocessor">
+      <UniqueIdentifier>{7FD72AB3-5E29-3629-BC82-54F806E60807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{13A529B3-A369-345E-8A2E-F235EC822F56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\App.xaml.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Core\ThemeGenerator.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\StdAfx.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\ControlsHelper.cpp">
+      <Filter>Theme\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\IsNullConverter.cpp">
+      <Filter>Theme\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\ItemHelper.cpp">
+      <Filter>Theme\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\MathConverter.cpp">
+      <Filter>Theme\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\StringToVisibilityConverter.cpp">
+      <Filter>Theme\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\TextBoxHelper.cpp">
+      <Filter>Theme\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\ToggleButtonHelper.cpp">
+      <Filter>Theme\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\TreeHelper.cpp">
+      <Filter>Theme\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\FileDialog.xaml.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\MainSettings.xaml.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\MainWindow.xaml.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\RootWindow.xaml.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\App.xaml.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Core\ThemeGenerator.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\StdAfx.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\ControlsHelper.h">
+      <Filter>Theme\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\IsNullConverter.h">
+      <Filter>Theme\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\ItemHelper.h">
+      <Filter>Theme\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\MathConverter.h">
+      <Filter>Theme\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\StringToVisibilityConverter.h">
+      <Filter>Theme\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\TextBoxHelper.h">
+      <Filter>Theme\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\ToggleButtonHelper.h">
+      <Filter>Theme\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Helper\TreeHelper.h">
+      <Filter>Theme\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\FileDialog.xaml.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\MainSettings.xaml.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\MainWindow.xaml.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\RootWindow.xaml.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\allocators.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\document.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\encodedstream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\encodings.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\error\en.h">
+      <Filter>rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\error\error.h">
+      <Filter>rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\filereadstream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\filewritestream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\fwd.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\biginteger.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\diyfp.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\dtoa.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\ieee754.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\itoa.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\meta.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\pow10.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\regex.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\stack.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\strfunc.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\strtod.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\internal\swap.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\istreamwrapper.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\memorybuffer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\memorystream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\msinttypes\inttypes.h">
+      <Filter>rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\msinttypes\stdint.h">
+      <Filter>rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\ostreamwrapper.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\pointer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\prettywriter.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\rapidjson.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\reader.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\schema.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\stream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\stringbuffer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\rapidjson\writer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Template\GeneratorParameters.json">
+      <Filter>Theme\Template</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\App.xaml" />
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Colors.xaml">
+      <Filter>Theme</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\Controls.CheckBox.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\Controls.ComboBox.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\Controls.ProgressBar.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\Controls.TabControl.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\Controls.TextBlock.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\Controls.TextBox.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\Controls.TreeView.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\DefaultButton.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\DefaultExpander.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\DefaultListBox.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\DefaultMenu.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\DefaultTabControl.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\DefaultTextBox.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\DefaultWindow.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Default\Shared.xaml">
+      <Filter>Theme\Default</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\Theme\Template\Theme.Template.xaml">
+      <Filter>Theme\Template</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\FileDialog.xaml">
+      <Filter>UI</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\MainSettings.xaml">
+      <Filter>UI</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\MainWindow.xaml">
+      <Filter>UI</Filter>
+    </Page>
+    <Page Include="E:\irrlicht\Irrlicht-vkdx11\examples\33.NoesisGUIWindow\UI\RootWindow.xaml">
+      <Filter>UI</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{DCF432BF-6FB8-3B17-BC0C-0C0B8DA5C1A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Theme">
+      <UniqueIdentifier>{71163B06-23C3-388B-9B1B-35B77CC6C655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Theme\Default">
+      <UniqueIdentifier>{19BF6BB6-56E9-30BD-A671-633FA1FB2F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Theme\Helper">
+      <UniqueIdentifier>{C982E9A4-4967-3FA7-8948-C37AE6147BFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Theme\Template">
+      <UniqueIdentifier>{45562E31-9EB1-3EDD-B421-AF5E901BC8BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{CB27FDCE-FA60-35F1-980B-2239AF1574E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson">
+      <UniqueIdentifier>{26D38B0C-F6C0-3429-8BC9-55981F91BD8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson\error">
+      <UniqueIdentifier>{0AE2132D-02CF-3F2F-8DA5-40E6CA752739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson\internal">
+      <UniqueIdentifier>{0E67F69E-B10A-3888-9FA2-1898EECA17E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson\msinttypes">
+      <UniqueIdentifier>{28AE1BF1-6A77-3789-9991-929A97A3DE72}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

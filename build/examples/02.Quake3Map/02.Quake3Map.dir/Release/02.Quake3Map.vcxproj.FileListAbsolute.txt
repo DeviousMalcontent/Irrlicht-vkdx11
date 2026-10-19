@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\02.Quake3Map\02.Quake3Map.dir\Release\02.Quake3Map.vcxproj.CopyComplete

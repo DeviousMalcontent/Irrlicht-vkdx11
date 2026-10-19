@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9CgMaterialRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9EngineDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9HLSLMaterialRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9HardwareBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9NormalMapRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9ParallaxMapRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9ShaderMaterialRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9CgMaterialRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9Driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9HLSLMaterialRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9HardwareBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9MaterialRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9NormalMapRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9ParallaxMapRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9ShaderMaterialRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CD3D9Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\DirectX9\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D6F1EC9F-315F-3C26-AF72-28C27733A9C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9878487-F479-3FD1-8D90-F73915B0985A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

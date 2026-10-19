@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\Demo\Demo.dir\Debug\Demo.vcxproj.CopyComplete

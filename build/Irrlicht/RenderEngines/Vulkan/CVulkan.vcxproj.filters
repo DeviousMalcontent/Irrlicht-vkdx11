@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanCommandBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDescriptorLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDescriptorPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDescriptorSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanEngineDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanEventQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanFramebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanGpuParams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanGpuPipelineState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanHardwareBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanOcclusionQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanRenderTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanResources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanShaderCompiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanSwapChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanTimerQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanVertexDeclaration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\ContextManager\CLinuxPlatform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\ContextManager\CVulkanPlatform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\ContextManager\CWinPlatform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanCommandBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDescriptorLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDescriptorPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDescriptorSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanEventQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanFramebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanGpuParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanGpuPipelineState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanHardwareBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanOcclusionQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanRenderTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanResources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanShaderCompiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanSharedDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanSwapChain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanTimerQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CVulkanVertexDeclaration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\ContextManager\CLinuxPlatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\ContextManager\CVulkanPlatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\ContextManager\CWinPlatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\vk_mem_alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\GLSL\VkDefault.frag" />
+    <None Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\GLSL\VkDefault.vert" />
+    <None Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\GLSL\VkDefaultSH.vert" />
+    <None Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\GLSL\VkDefaultSK.vert" />
+    <None Include="E:\irrlicht\Irrlicht-vkdx11\Irrlicht\RenderEngines\Vulkan\GLSL\VkDefaultT2.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D6F1EC9F-315F-3C26-AF72-28C27733A9C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9878487-F479-3FD1-8D90-F73915B0985A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B3BBB15-D5A2-35CC-8912-DBCF096C6855}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>SPIRV-Tools</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\irrlicht\Irrlicht-vkdx11\build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SPIRV-Tools.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SPIRV-Tools</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\irrlicht\Irrlicht-vkdx11\build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SPIRV-Tools.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SPIRV-Tools</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\irrlicht\Irrlicht-vkdx11\build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">SPIRV-Tools.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">SPIRV-Tools</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\irrlicht\Irrlicht-vkdx11\build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SPIRV-Tools.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SPIRV-Tools</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm1024 /bigobj /Zc:throwingNew /Zm1024</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;4985;4619;4244;4996;4244;4985;4619;4244</DisableSpecificWarnings>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264;4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_NO_DEBUG_HEAP=1;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;_BUILD_DIRECTIVE="$(ConfigurationName)";_RUNTIME_PATH_="E:/irrlicht/Irrlicht-vkdx11/build/bin";_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_BUILD_PLATFORM_TOOL_SET=$(PlatformToolsetVersion);SYSCONFDIR="";SPIRV_WINDOWS;SPIRV_COLOR_TERMINAL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_NO_DEBUG_HEAP=1;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_RUNTIME_PATH_=\"E:/irrlicht/Irrlicht-vkdx11/build/bin\";_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_BUILD_PLATFORM_TOOL_SET=$(PlatformToolsetVersion);SYSCONFDIR=\"\";SPIRV_WINDOWS;SPIRV_COLOR_TERMINAL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm1024</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996;4244;4985;4619;4244</DisableSpecificWarnings>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;_BUILD_DIRECTIVE="$(ConfigurationName)";_RUNTIME_PATH_="E:/irrlicht/Irrlicht-vkdx11/build/bin";_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_BUILD_PLATFORM_TOOL_SET=$(PlatformToolsetVersion);SYSCONFDIR="";SPIRV_WINDOWS;SPIRV_COLOR_TERMINAL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_RUNTIME_PATH_=\"E:/irrlicht/Irrlicht-vkdx11/build/bin\";_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_BUILD_PLATFORM_TOOL_SET=$(PlatformToolsetVersion);SYSCONFDIR=\"\";SPIRV_WINDOWS;SPIRV_COLOR_TERMINAL;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm1024</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4996;4244;4985;4619;4244</DisableSpecificWarnings>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;_BUILD_DIRECTIVE="$(ConfigurationName)";_RUNTIME_PATH_="E:/irrlicht/Irrlicht-vkdx11/build/bin";_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_BUILD_PLATFORM_TOOL_SET=$(PlatformToolsetVersion);SYSCONFDIR="";SPIRV_WINDOWS;SPIRV_COLOR_TERMINAL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_RUNTIME_PATH_=\"E:/irrlicht/Irrlicht-vkdx11/build/bin\";_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_BUILD_PLATFORM_TOOL_SET=$(PlatformToolsetVersion);SYSCONFDIR=\"\";SPIRV_WINDOWS;SPIRV_COLOR_TERMINAL;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /Zc:throwingNew /Zm1024</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;4985;4619;4244</DisableSpecificWarnings>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4263;4264</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;_BUILD_DIRECTIVE="$(ConfigurationName)";_RUNTIME_PATH_="E:/irrlicht/Irrlicht-vkdx11/build/bin";_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_BUILD_PLATFORM_TOOL_SET=$(PlatformToolsetVersion);SYSCONFDIR="";SPIRV_WINDOWS;SPIRV_COLOR_TERMINAL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;NOMINMAX;_BUILD_DIRECTIVE=\"$(ConfigurationName)\";_RUNTIME_PATH_=\"E:/irrlicht/Irrlicht-vkdx11/build/bin\";_WIN64;_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_BUILD_PLATFORM_TOOL_SET=$(PlatformToolsetVersion);SYSCONFDIR=\"\";SPIRV_WINDOWS;SPIRV_COLOR_TERMINAL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..\include;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\..;E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/irrlicht/Irrlicht-vkdx11/dep/SPIRV/SPIRV-Tools/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/dep/SPIRV/SPIRV-Tools/source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\SPIRV-Tools\source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/irrlicht/Irrlicht-vkdx11/dep/SPIRV/SPIRV-Tools/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/dep/SPIRV/SPIRV-Tools/source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\SPIRV-Tools\source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/irrlicht/Irrlicht-vkdx11/dep/SPIRV/SPIRV-Tools/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/dep/SPIRV/SPIRV-Tools/source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\SPIRV-Tools\source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/irrlicht/Irrlicht-vkdx11/dep/SPIRV/SPIRV-Tools/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/dep/SPIRV/SPIRV-Tools/source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\irrlicht\Irrlicht-vkdx11\build\dep\SPIRV\SPIRV-Tools\source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\include\spirv-tools\libspirv.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\bitutils.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\bit_vector.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\hex_float.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\make_unique.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\parse_number.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\small_vector.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\string_utils.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\timer.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\assembly_grammar.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\binary.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\cfa.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\diagnostic.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\disassemble.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\enum_set.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\enum_string_mapping.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\ext_inst.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\extensions.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\id_descriptor.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\instruction.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\latest_version_glsl_std_450_header.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\latest_version_opencl_std_header.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\latest_version_spirv_header.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\macro.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\name_mapper.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\opcode.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\operand.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\parsed_operand.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\print.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\spirv_constant.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\spirv_definition.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\spirv_endian.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\spirv_target_env.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\spirv_validator_options.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\table.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\text.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\text_handler.h" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate.h" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\bit_vector.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\parse_number.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\util\string_utils.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\assembly_grammar.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\binary.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\diagnostic.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\disassemble.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\enum_string_mapping.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\ext_inst.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\extensions.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\id_descriptor.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\libspirv.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\name_mapper.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\opcode.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\operand.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\parsed_operand.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\print.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\software_version.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\spirv_endian.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\spirv_target_env.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\spirv_validator_options.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\table.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\text.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\text_handler.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_adjacency.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_annotation.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_arithmetics.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_atomics.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_barriers.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_bitwise.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_builtins.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_capability.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_cfg.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_composites.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_constants.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_conversion.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_datarules.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_debug.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_decorations.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_derivatives.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_ext_inst.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_execution_limitations.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_function.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_id.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_image.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_interfaces.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_instruction.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_layout.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_literals.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_logicals.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_memory.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_mode_setting.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_non_uniform.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_primitives.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validate_type.cpp" />
+    <ClInclude Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\decoration.h" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\basic_block.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\construct.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\function.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\instruction.cpp" />
+    <ClCompile Include="E:\irrlicht\Irrlicht-vkdx11\dep\SPIRV\SPIRV-Tools\source\val\validation_state.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\irrlicht\Irrlicht-vkdx11\build\ZERO_CHECK.vcxproj">
+      <Project>{0AEF8AC9-A006-3AC3-91F1-C219F7A16A86}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

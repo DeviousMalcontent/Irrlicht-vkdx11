@@ -1,0 +1,10 @@
+^E:\IRRLICHT\IRRLICHT-VKDX11\BUILD\CMAKEFILES\0BF92E8D7F49342481E4282099223E70\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11 -BE:/irrlicht/Irrlicht-vkdx11/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/irrlicht/Irrlicht-vkdx11/build/IrrlichtDV.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

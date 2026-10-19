@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\04.Movement\04.Movement.dir\Debug\04.Movement.vcxproj.CopyComplete

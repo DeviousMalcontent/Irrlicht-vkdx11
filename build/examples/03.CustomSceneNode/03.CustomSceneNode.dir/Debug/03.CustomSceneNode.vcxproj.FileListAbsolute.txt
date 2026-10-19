@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\03.CustomSceneNode\03.CustomSceneNode.dir\Debug\03.CustomSceneNode.vcxproj.CopyComplete

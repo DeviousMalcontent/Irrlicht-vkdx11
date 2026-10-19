@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\05.UserInterface\05.UserInterface.dir\Release\05.UserInterface.vcxproj.CopyComplete

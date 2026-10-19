@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\25.XmlHandling\25.XmlHandling.dir\Release\25.XmlHandling.vcxproj.CopyComplete

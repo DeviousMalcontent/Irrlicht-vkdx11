@@ -1,0 +1,10 @@
+^E:\IRRLICHT\IRRLICHT-VKDX11\BUILD\FREETYPE-2.9\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/irrlicht/Irrlicht-vkdx11/build/freetype-2.9 -BE:/irrlicht/Irrlicht-vkdx11/build/freetype-2.9/objs --check-stamp-file E:/irrlicht/Irrlicht-vkdx11/build/freetype-2.9/objs/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

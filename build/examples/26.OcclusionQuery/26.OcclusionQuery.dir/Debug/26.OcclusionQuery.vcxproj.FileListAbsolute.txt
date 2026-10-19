@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\26.OcclusionQuery\26.OcclusionQuery.dir\Debug\26.OcclusionQuery.vcxproj.CopyComplete

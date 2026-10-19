@@ -1,0 +1,1 @@
+E:\irrlicht\Irrlicht-vkdx11\build\examples\11.PerPixelLighting\11.PerPixelLighting.dir\Debug\11.PerPixelLighting.vcxproj.CopyComplete
