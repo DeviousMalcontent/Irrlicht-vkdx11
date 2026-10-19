@@ -25,6 +25,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <limits>
+#include <type_traits>
 
 namespace json11 {
 
@@ -151,10 +152,21 @@ protected:
 
     // Comparisons
     bool equals(const JsonValue * other) const override {
-        return m_value == static_cast<const Value<tag, T> *>(other)->m_value;
+        if constexpr (std::is_same<T, std::nullptr_t>::value) {
+            // For null, equality is always true when called (Json::operator== checks types).
+            return true;
+        } else {
+            return m_value == static_cast<const Value<tag, T> *>(other)->m_value;
+        }
     }
+
     bool less(const JsonValue * other) const override {
-        return m_value < static_cast<const Value<tag, T> *>(other)->m_value;
+        if constexpr (std::is_same<T, std::nullptr_t>::value) {
+            // For null, less should return false to avoid invalid '<' on std::nullptr_t.
+            return false;
+        } else {
+            return m_value < static_cast<const Value<tag, T> *>(other)->m_value;
+        }
     }
 
     const T m_value;
