@@ -51,7 +51,7 @@ static io::path getExampleMediaPath()
 //    //SetWorkingDirectory();
 //    return io::path("media/");
 //#endif
-    return io::path(_BIN_OUTPUT_DIRECTORY) + "/media/";
+    return "../media/";
 }
 
 } // end namespace irr
