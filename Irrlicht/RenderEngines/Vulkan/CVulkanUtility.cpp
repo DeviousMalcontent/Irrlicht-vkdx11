@@ -6,6 +6,14 @@
 #include "glslang/Include/BaseTypes.h"
 #include "os.h"
 
+#ifndef VK_OBJECT_TYPE_OBJECT_TABLE_NVX
+#define VK_OBJECT_TYPE_OBJECT_TABLE_NVX ((VkObjectType)1000086000)
+#endif
+
+#ifndef VK_OBJECT_TYPE_INDIRECT_COMMANDS_LAYOUT_NVX
+#define VK_OBJECT_TYPE_INDIRECT_COMMANDS_LAYOUT_NVX ((VkObjectType)1000086001)
+#endif
+
 using namespace irr;
 using namespace irr::video;
 
