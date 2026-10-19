@@ -172,8 +172,11 @@ irr::video::CVulkanDriver::~CVulkanDriver()
     }
 
 #if VULKAN_DEBUG_MODE
-    if (VulkanDispatcherExt.vkDestroyDebugReportCallbackEXT)
-        VulkanDispatcherExt.vkDestroyDebugReportCallbackEXT(mInstance, mDebugCallback, VulkanDevice::gVulkanAllocator);
+    if (false)
+    {
+        if (VulkanDispatcherExt.vkDestroyDebugReportCallbackEXT)
+            VulkanDispatcherExt.vkDestroyDebugReportCallbackEXT(mInstance, mDebugCallback, VulkanDevice::gVulkanAllocator);
+    }
 #endif
 
 
@@ -261,20 +264,18 @@ void irr::video::CVulkanDriver::initialize(void* param)
 #if VULKAN_DEBUG_MODE
     const char* layers[] =
     {
-        "VK_LAYER_LUNARG_standard_validation"
+        "VK_LAYER_KHRONOS_validation"
     };
 
     const char* extensions[] =
     {
         nullptr, /** Surface extension */
         nullptr, /** OS specific surface extension */
-        VK_EXT_DEBUG_REPORT_EXTENSION_NAME,
         nullptr, /** Debug Marker **/
-        //VK_KHR_DISPLAY_EXTENSION_NAME
     };
 
 #if VULKAN_DEBUG_MARKER
-    extensions[3] = VK_EXT_DEBUG_UTILS_EXTENSION_NAME;
+    extensions[2] = VK_EXT_DEBUG_UTILS_EXTENSION_NAME;
 #endif
 
     uint32_t numLayers = sizeof(layers) / sizeof(layers[0]);
@@ -322,10 +323,15 @@ void irr::video::CVulkanDriver::initialize(void* param)
     instanceInfo.ppEnabledLayerNames = layers;
     instanceInfo.enabledExtensionCount = numExtensions;
     instanceInfo.ppEnabledExtensionNames = extensions;
+	
+	for (uint32_t i = 0; i < instanceInfo.enabledExtensionCount; ++i) {
+    printf("Requested Instance Extension: %s\n", instanceInfo.ppEnabledExtensionNames[i]);
+	}
 
     VkResult result = vkCreateInstance(&instanceInfo, VulkanDevice::gVulkanAllocator, &mInstance);
     if (result != VK_SUCCESS)
     {
+		printf("CRITICAL: vkCreateInstance failed with error code: %d\n", result);
         --instanceInfo.enabledExtensionCount;
         result = vkCreateInstance(&instanceInfo, VulkanDevice::gVulkanAllocator, &mInstance);
     }
@@ -344,20 +350,23 @@ void irr::video::CVulkanDriver::initialize(void* param)
 
     // Set up debugging
 #if VULKAN_DEBUG_MODE
-    VkDebugReportFlagsEXT debugFlags = VK_DEBUG_REPORT_ERROR_BIT_EXT | VK_DEBUG_REPORT_WARNING_BIT_EXT | VK_DEBUG_UTILS_MESSAGE_TYPE_PERFORMANCE_BIT_EXT | VK_DEBUG_REPORT_PERFORMANCE_WARNING_BIT_EXT; // | VK_DEBUG_REPORT_INFORMATION_BIT_EXT | VK_DEBUG_REPORT_DEBUG_BIT_EXT;
-
-    VkDebugReportCallbackCreateInfoEXT debugInfo;
-    debugInfo.sType = VK_STRUCTURE_TYPE_DEBUG_REPORT_CREATE_INFO_EXT;
-    debugInfo.pNext = nullptr;
-    debugInfo.pfnCallback = (PFN_vkDebugReportCallbackEXT)debugMsgCallback;
-    debugInfo.flags = debugFlags;
-    debugInfo.pUserData = this;
-
-    if (VulkanDispatcherExt.vkCreateDebugReportCallbackEXT)
+    if (false)
     {
-        result = VulkanDispatcherExt.vkCreateDebugReportCallbackEXT(mInstance, &debugInfo, VulkanDevice::gVulkanAllocator, &mDebugCallback);
-        assert(result == VK_SUCCESS);
-    }
+		VkDebugReportFlagsEXT debugFlags = VK_DEBUG_REPORT_ERROR_BIT_EXT | VK_DEBUG_REPORT_WARNING_BIT_EXT | VK_DEBUG_UTILS_MESSAGE_TYPE_PERFORMANCE_BIT_EXT | VK_DEBUG_REPORT_PERFORMANCE_WARNING_BIT_EXT; // | VK_DEBUG_REPORT_INFORMATION_BIT_EXT | VK_DEBUG_REPORT_DEBUG_BIT_EXT;
+
+		VkDebugReportCallbackCreateInfoEXT debugInfo;
+		debugInfo.sType = VK_STRUCTURE_TYPE_DEBUG_REPORT_CREATE_INFO_EXT;
+		debugInfo.pNext = nullptr;
+		debugInfo.pfnCallback = (PFN_vkDebugReportCallbackEXT)debugMsgCallback;
+		debugInfo.flags = debugFlags;
+		debugInfo.pUserData = this;
+
+		if (VulkanDispatcherExt.vkCreateDebugReportCallbackEXT)
+		{
+			result = VulkanDispatcherExt.vkCreateDebugReportCallbackEXT(mInstance, &debugInfo, VulkanDevice::gVulkanAllocator, &mDebugCallback);
+			assert(result == VK_SUCCESS);
+		}
+	}
 #endif
 
     // Enumerate all devices
