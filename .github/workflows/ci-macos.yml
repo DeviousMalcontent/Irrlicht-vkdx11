@@ -1,0 +1,30 @@
+name: CI - MacOS
+
+on:
+  push:
+    branches: [ "macos_ci_build" ]
+  pull_request:
+    branches: [ "macos_ci_build" ]
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Configure CMake
+      # Configure CMake in a 'build' subdirectory
+      run: cmake -B build -D CMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }}
+
+    - name: Build
+      # Build your project with CMake
+      run: cmake --build build --config ${{ env.BUILD_TYPE }}
+
+    - name: Test
+      working-directory: build
+      # Execute tests (if you use CTest)
+      run: ctest --output-on-failure
