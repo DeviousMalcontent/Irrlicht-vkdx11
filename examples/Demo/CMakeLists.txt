@@ -1,9 +1,9 @@
 cmake_minimum_required( VERSION 3.0 )
 
-SET( CMAKE_MODULE_PATH
-  ${ CMAKE_MODULE_PATH }
-  ${ CMAKE_CURRENT_SOURCE_DIR}/CMake
-  ${ CMAKE_CURRENT_SOURCE_DIR}/../../CMake
+SET(CMAKE_MODULE_PATH
+  ${CMAKE_MODULE_PATH}
+  ${CMAKE_CURRENT_SOURCE_DIR}/CMake
+  ${CMAKE_CURRENT_SOURCE_DIR}/../../CMake
 )
 
 project(DemoApp)
@@ -24,7 +24,7 @@ if (WIN32)
         ${EXAMPLE_SOURCE_FILES}
         resscript.rc
     )
-endif ()
+endif()
 
 add_executable(Demo ${EXAMPLE_SOURCE_FILES})
 
