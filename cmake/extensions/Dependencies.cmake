@@ -234,10 +234,10 @@ if(BUILD_DEPENDENCIES AND NOT EXISTS ${PROJECTDEPS_PATH})
     execute_process(COMMAND ${CMAKE_COMMAND}
         -E tar xf freetype-2.9.tar.gz WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
     # patch toolchain for iOS
-    execute_process(COMMAND ${CMAKE_COMMAND} -E copy
-        ${CMAKE_SOURCE_DIR}/CMake/toolchain/ios.toolchain.xcode.cmake
-        freetype-2.9/builds/cmake/iOS.cmake
-		WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+    # execute_process(COMMAND ${CMAKE_COMMAND} -E copy
+    #   ${CMAKE_SOURCE_DIR}/CMake/toolchain/ios.toolchain.xcode.cmake
+    #   freetype-2.9/builds/cmake/iOS.cmake
+	#	WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
     execute_process(COMMAND ${CMAKE_COMMAND}
         -DCMAKE_INSTALL_PREFIX=${PROJECTDEPS_PATH}
         -DCMAKE_BUILD_TYPE=${DEP_BUILD_TYPE}
