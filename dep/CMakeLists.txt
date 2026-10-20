@@ -1,8 +1,8 @@
-AddBuildInLibrary(GLM glm)
-AddBuildInLibrary(JPEGLIB jpeglib)
-AddBuildInLibrary(LIBPNG libpng)
-add_subdirectory(threads)
-AddBuildInLibrary(ZLIB zlib)
+AddBuildInLibrary( glm glm )
+AddBuildInLibrary( jpeglib jpeglib )
+AddBuildInLibrary( libpng libpng )
+add_subdirectory( threads )
+AddBuildInLibrary( zlib zlib )
 
 IF (BUILD_IN_USE_GLSLANG)
 
