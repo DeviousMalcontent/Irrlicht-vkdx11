@@ -19,8 +19,8 @@
 #ifndef MANGOSSERVER_ERRORS_H
 #define MANGOSSERVER_ERRORS_H
 
-#include "standard/Platform/Define.h"
-#include "standard/Preprocessor/pp_platform.h"
+#include "Platform/Define.h"
+#include "Preprocessor/pp_platform.h"
 #include <csignal>
 
 #ifdef WIN32
