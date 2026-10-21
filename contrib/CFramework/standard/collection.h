@@ -18,8 +18,8 @@
 #ifndef __Collection_H__
 #define __Collection_H__
 
-#include <standard/misc.h>
-#include <standard/events.h>
+#include "misc.h"
+#include "events.h"
 
 namespace System
 {
