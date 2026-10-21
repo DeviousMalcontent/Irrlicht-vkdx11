@@ -26,7 +26,7 @@
 #include <codecvt>
 #include <locale>
 
-#include "standard/Platform/Define.h"
+#include "../standard/Platform/Define.h"
 
 #ifndef ATTR_NORETURN
 #  define ATTR_NORETURN
