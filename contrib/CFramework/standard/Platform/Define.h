@@ -21,7 +21,7 @@
 
 #include <cstdint>
 #include <sys/types.h>
-#include "standard/Platform/CompilerDefs.h"
+#include "CompilerDefs.h"
 
 #define MODUL_LITTLEENDIAN 0
 #define MODUL_BIGENDIAN    1
