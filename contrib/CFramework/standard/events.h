@@ -25,8 +25,8 @@
 #include <mutex>
 #include <memory>
 
-#include "standard/HookList.h"
-#include "standard/misc.h"
+#include "HookList.h"
+#include "misc.h"
 
 #include <functional>
 
