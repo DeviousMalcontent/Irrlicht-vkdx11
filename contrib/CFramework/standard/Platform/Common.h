@@ -43,8 +43,8 @@
 #include <shared_mutex>
 //#include "sparsehash/dense_hash_map"
 
-#include "standard/Platform/Define.h"
-#include "standard/Preprocessor/pp_platform.h"
+#include "Define.h"
+#include "../Preprocessor/pp_platform.h"
 
 #if COMPILER == COMPILER_MICROSOFT
 #   ifndef __SHOW_STUPID_WARNINGS__
