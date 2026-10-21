@@ -154,8 +154,8 @@ namespace System
     template<typename T>
     T& Default() 
     {
-        static T default = T();
-        return default; 
+        static T default_value = T();
+        return default_value;
     };
 
     namespace Basic
