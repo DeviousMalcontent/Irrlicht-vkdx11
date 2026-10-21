@@ -2,7 +2,7 @@
 #define __STANDARD_THREADING_H__
 
 #include <atomic>
-#include "standard/Platform/Common.h"
+#include "Platform/Common.h"
 
 namespace System
 {
