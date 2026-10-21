@@ -1,9 +1,9 @@
 #ifndef __CLIENT_DATASOURCE_INTERFACE_H__
 #define __CLIENT_DATASOURCE_INTERFACE_H__
 
-#include "standard/Platform/Common.h"
-#include "standard/filesystem.h"
-#include "standard/threading.h"
+#include "../Platform/Common.h"
+#include "../filesystem.h"
+#include "../threading.h"
 
 namespace System
 {
