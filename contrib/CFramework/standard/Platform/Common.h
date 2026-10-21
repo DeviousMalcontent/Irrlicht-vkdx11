@@ -72,11 +72,11 @@
 #   endif
 #endif                                                      // __GNUC__
 
-#include "standard/UnorderedMapSet.h"
+#include "../UnorderedMapSet.h"
 
-#include "standard/BasicPrimities.h"
-#include "standard/misc.h"
-#include "System/rtString.h"
+#include "../BasicPrimities.h"
+#include "../misc.h"
+#include "../../System/rtString.h"
 
 #if PLATFORM == PLATFORM_WINDOWS
 #  if defined(__INTEL_COMPILER)
