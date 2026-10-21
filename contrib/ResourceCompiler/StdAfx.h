@@ -11,9 +11,9 @@
 
 #include "../CFramework/standard/Platform/Common.h"
 #include "../CFramework/standard/BasicPrimities.h"
-#include <standard/Errors.h>
-#include <standard/events.h>
-#include <standard/callback.h>
-#include <standard/misc.h>
+#include "../CFramework/standard/Errors.h"
+#include "../CFramework/standard/events.h"
+#include "../CFramework/standard/callback.h"
+#include "../CFramework/standard/misc.h"
 
 #endif // _WC_PCH_COMMON_H_
