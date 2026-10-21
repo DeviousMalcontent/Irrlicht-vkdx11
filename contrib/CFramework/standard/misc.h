@@ -2,7 +2,7 @@
 #define _CORE_MISC_H_
 
 #include <cmath>
-#include "standard/Preprocessor/pp_platform.h"
+#include "Preprocessor/pp_platform.h"
 #include <functional>
 
 #ifdef WIN32
