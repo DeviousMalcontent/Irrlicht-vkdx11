@@ -3,6 +3,16 @@
 
 #define NOMINMAX
 
+#ifdef max
+  #undef max
+#endif
+#ifdef min
+  #undef min
+#endif
+
+#include <algorithm>
+#include <string>
+
 #include <atomic>
 #include <future>
 #include "System/System.h"
