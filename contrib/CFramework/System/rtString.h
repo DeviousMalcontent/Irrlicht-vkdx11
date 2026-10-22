@@ -18,6 +18,13 @@
 #ifndef __SYSTEM_STRING_H__
 #define __SYSTEM_STRING_H__
 
+#ifdef max
+  #undef max
+#endif
+#ifdef min
+  #undef min
+#endif
+
 #include <stdarg.h>
 #include <algorithm>
 #include <string>
