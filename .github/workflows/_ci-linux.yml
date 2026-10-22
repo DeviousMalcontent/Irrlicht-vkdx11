@@ -26,6 +26,8 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
             binutils-dev \
             libiberty-dev
+            glslang-dev \
+            spirv-tools
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
@@ -38,4 +40,3 @@ jobs:
     - name: Test
       working-directory: ${{github.workspace}}/build
       run: ls -R
-
