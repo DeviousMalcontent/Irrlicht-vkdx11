@@ -1,5 +1,7 @@
-#ifndef _CFramework_DB_COMMON_H_
-#define _CFramework_DB_COMMON_H_
+#ifndef __STDAFX_H__
+#define __STDAFX_H__
+
+#define NOMINMAX
 
 #include <atomic>
 #include <future>
