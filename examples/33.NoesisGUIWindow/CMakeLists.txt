@@ -1,4 +1,6 @@
-return()
+if(UNIX)
+    return()
+endif()
 
 set(EXECUTABLE_NAME "33.NoesisGUIWindow")
 SET(EXECUTABLE_LINK_LIBS "")
