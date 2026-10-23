@@ -50,6 +50,14 @@ message("Source Dir               : ${CMAKE_SOURCE_DIR}")
 message("------------------------------------------------------------------------------------------------------------------")
 message("")
 message("")
+
+if(UNIX)
+    add_library(SPVRemapper STATIC IMPORTED)
+    set_target_properties(SPVRemapper PROPERTIES IMPORTED_LOCATION "/usr/lib/x86_64-linux-gnu/libSPVRemapper.a")
+    
+    add_library(SPIRV STATIC IMPORTED)
+    set_target_properties(SPIRV PROPERTIES IMPORTED_LOCATION "/usr/lib/x86_64-linux-gnu/libSPIRV.a")
+endif()
  
 set(CMAKE_SKIP_BUILD_RPATH FALSE)
 set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
