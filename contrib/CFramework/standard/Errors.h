@@ -23,6 +23,7 @@
 #include "Preprocessor/pp_platform.h"
 #include <csignal>
 #include <stdexcept>
+#include <cassert>
 
 #ifdef WIN32
 #   define ASSUME(CONDITION) __assume(CONDITION)
