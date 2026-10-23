@@ -1,3 +1,5 @@
+add_compile_options(-std=c++17)
+
 # Glob only and not recurse, there are other libs for that
 file(GLOB_RECURSE MODUL_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp *.c *.cc *.hpp *.h)
 
