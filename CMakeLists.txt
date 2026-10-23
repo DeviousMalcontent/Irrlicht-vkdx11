@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.6 FATAL_ERROR)
 
 project(IrrlichtDV VERSION 0.0.1 LANGUAGES CXX C)
 
+set(CMAKE_CXX_STANDARD 17 CACHE INTERNAL "Force C++17 standard globally")
+set(CMAKE_CXX_STANDARD_REQUIRED ON CACHE INTERNAL "Require C++17 standard globally")
+
+
 message("")
 message("Configuration:")
 message("")
