@@ -22,6 +22,7 @@
 #include "Platform/Define.h"
 #include "Preprocessor/pp_platform.h"
 #include <csignal>
+#include <stdexcept>
 
 #ifdef WIN32
 #   define ASSUME(CONDITION) __assume(CONDITION)
@@ -78,81 +79,81 @@ namespace System
     //    TC_CFRAMEWORK_API std::string Backtrace();
     //}
 
-    struct ArgumentNullException : std::exception
+struct ArgumentNullException : std::runtime_error
     {
-        ArgumentNullException() {}
+        ArgumentNullException() : std::runtime_error("") {}
         ArgumentNullException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct ArgumentException : std::exception
+    struct ArgumentException : std::runtime_error
     {
-        ArgumentException() {}
+        ArgumentException() : std::runtime_error("") {}
         ArgumentException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct AggregateException : std::exception
+    struct AggregateException : std::runtime_error
     {
-        AggregateException() {}
+        AggregateException() : std::runtime_error("") {}
         AggregateException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct KeyNotFoundException : std::exception
+    struct KeyNotFoundException : std::runtime_error
     {
-        KeyNotFoundException() {}
+        KeyNotFoundException() : std::runtime_error("") {}
         KeyNotFoundException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct InvalidOperationException : std::exception
+    struct InvalidOperationException : std::runtime_error
     {
-        InvalidOperationException() {}
+        InvalidOperationException() : std::runtime_error("") {}
         InvalidOperationException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct NotSupportedException : std::exception
+    struct NotSupportedException : std::runtime_error
     {
-        NotSupportedException() {}
+        NotSupportedException() : std::runtime_error("") {}
         NotSupportedException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct FormatException : std::exception
+    struct FormatException : std::runtime_error
     {
-        FormatException() {}
+        FormatException() : std::runtime_error("") {}
         FormatException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct InvalidCastException : std::exception
+    struct InvalidCastException : std::runtime_error
     {
-        InvalidCastException() {}
+        InvalidCastException() : std::runtime_error("") {}
         InvalidCastException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct TargetInvocationException : std::exception
+    struct TargetInvocationException : std::runtime_error
     {
-        TargetInvocationException() {}
+        TargetInvocationException() : std::runtime_error("") {}
         TargetInvocationException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct NotImplementedException : std::exception
+    struct NotImplementedException : std::runtime_error
     {
-        NotImplementedException() {}
+        NotImplementedException() : std::runtime_error("") {}
         NotImplementedException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
-    struct ArgumentOutOfRangeException : std::exception
+    struct ArgumentOutOfRangeException : std::runtime_error
     {
-        ArgumentOutOfRangeException() {}
+        ArgumentOutOfRangeException() : std::runtime_error("") {}
         ArgumentOutOfRangeException(const char* msg)
-            : std::exception(msg) {}
+            : std::runtime_error(msg) {}
     };
 
     template<typename TException>
