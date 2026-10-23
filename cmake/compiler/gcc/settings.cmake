@@ -26,19 +26,13 @@ if( WITH_WARNINGS )
   message(STATUS "GCC: All warnings enabled")
 endif()
 
-if( DEBUG )
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g3 -O0")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g3 -O0")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g3")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g3")
 
-  set(CMAKE_C_FLAGS_DEBUG " -g3 -O0")
-  set(CMAKE_CXX_FLAGS_DEBUG " -g3 -O0")
-  
-  message(STATUS "GCC: Debug-flags set (-g3)")
-else()
- 
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g3 -O2 -minline-all-stringops")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g3 -O2 -minline-all-stringops")
-endif()
+set(CMAKE_C_FLAGS_RELEASE "-O2 -minline-all-stringops")
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -minline-all-stringops")
+set(CMAKE_C_FLAGS_DEBUG "-O0")
+set(CMAKE_CXX_FLAGS_DEBUG "-O0")
 
 if ( PCH )
 	message(STATUS "GCC: GCH Warning enabled")
