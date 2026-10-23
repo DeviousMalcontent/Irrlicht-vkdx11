@@ -30,6 +30,9 @@
 #include <string>
 #include <vector>
 #include <sstream>
+
+#include <fmt/printf.h>
+
 #include <codecvt>
 #include <locale>
 
