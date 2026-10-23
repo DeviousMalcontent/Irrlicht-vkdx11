@@ -10,6 +10,12 @@
 #include <windows.h>
 #endif
 
+// if NOT win32.
+#ifndef WIN32
+#  include <dlfcn.h>
+#endif
+
+
 // we always use stdlibc++ std::max/std::min, undefine some not C++ standard defines (Win API and some pother platforms)
 #ifdef max
 #  undef max
@@ -61,28 +67,28 @@ namespace System
     template<typename TOwner>
     struct EnableSharedFromThisEx : public std::enable_shared_from_this<TOwner>
     {
-        template <typename Derived>
+        template<typename Derived>
         std::shared_ptr<Derived> shared_from_base_dynamic()
         {
-            return std::dynamic_pointer_cast<Derived>(shared_from_this());
+            return std::dynamic_pointer_cast<Derived>(this->shared_from_this());
         }
 
         template <typename Derived>
         std::shared_ptr<Derived> shared_from_base_static()
         {
-            return std::static_pointer_cast<Derived>(shared_from_this());
+            return std::dynamic_pointer_cast<Derived>(this->shared_from_this());
         }
 
         template <typename Derived>
         std::weak_ptr<Derived> weak_from_base_dynamic()
         {
-            return std::dynamic_pointer_cast<Derived>(shared_from_this());
+            return std::dynamic_pointer_cast<Derived>(this->shared_from_this());
         }
 
         template <typename Derived>
         std::weak_ptr<Derived> weak_from_base_static()
         {
-            return std::static_pointer_cast<Derived>(shared_from_this());
+            return std::dynamic_pointer_cast<Derived>(this->shared_from_this());
         }
     };
 
@@ -98,25 +104,19 @@ namespace System
         }
     };
 
+    inline uint64_t GetCurrentModule()
+    {
 #ifdef WIN32
-    __forceinline uint64_t GetCurrentModule()
-    { // NB: XP+ solution!
-        HMODULE hModule = NULL;
-        GetModuleHandleEx(
-            GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
-            (LPCTSTR)GetCurrentModule,
-            &hModule);
-
-        return uint64_t(hModule);
-    }
+        return uint64_t(GetModuleHandle(NULL));
 #else
-    __forceinline uint64_t GetCurrentModule()
-    { // NB: XP+ solution!
         Dl_info dlinf;
-        assert(dladdr(&__GetCurrent_RunTime__ReflectionModule, &dlinf) == 1); // not exported func use
-        return uint64_t(dlinf.dli_fbase);
-    }
+
+        if (dladdr((void*)&GetCurrentModule, &dlinf)) {
+            return uint64_t(dlinf.dli_fbase);
+        }
+        return 0;
 #endif
+    }
 
     struct Invokable
     {
