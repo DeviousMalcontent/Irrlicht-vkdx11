@@ -5,7 +5,9 @@ on:
     branches: [ "linux_ci_build" ]
   pull_request:
     branches: [ "linux_ci_build" ]
-    
+env:
+  BUILD_TYPE: Release
+  
 jobs:
   build:
     # The CMake configure and build commands are platform agnostic and should work equally well on Windows or Mac.
@@ -28,7 +30,6 @@ jobs:
 
     - name: Configure CMake
       env:
-          BUILD_TYPE: Release
           CXXFLAGS: "-std=c++17"
           CFLAGS: "-std=c11"
           CMAKE_CXX_STANDARD: 17
