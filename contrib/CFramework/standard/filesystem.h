@@ -1,28 +1,43 @@
-#ifndef __CLIENT_FILESYSTEM_INTERFACE_H__
-#define __CLIENT_FILESYSTEM_INTERFACE_H__
+#ifndef __SYSTEM_FILESYSTEM_H__
+#define __SYSTEM_FILESYSTEM_H__
 
-#include "Platform/Common.h"
-#include <filesystem>
+#include <vector>
+//#include "Platform/Common.h"
+//#include <filesystem>
 #include <regex>
-#include <filesystem>
+
+#if defined(__has_include) && __has_include(<filesystem>)
+#  include <filesystem>
+#  // If the compiler is stuck in an older mode but has the header, 
+#  // some versions map it to experimental instead. Let's make an alias.
+   namespace std {
+       #if __cplusplus < 201703L && defined(__cpp_lib_experimental_filesystem)
+           namespace filesystem = experimental::filesystem;
+       #endif
+   }
+#elif __has_include(<experimental/filesystem>)
+#  include <experimental/filesystem>
+   namespace std {
+       namespace filesystem = experimental::filesystem;
+   }
+#endif
 
 namespace System
 {
-    namespace Platform
-    {
-        //Returns the last Win32 error, in string format. Returns an empty string if there is no error.
-        std::string TC_CFRAMEWORK_API GetLastErrorAsString(DWORD errorMessageID);
-    }
-
     namespace FileSystem
     {
-        typedef std::vector<std::filesystem::path> TFileList;
-        void TC_CFRAMEWORK_API GetFileList(std::filesystem::path const& path, TFileList& result_set, bool recurisve, const std::regex* filter = nullptr);
-        void TC_CFRAMEWORK_API CreateDir(std::filesystem::path const& path);
+#if defined(__cpp_lib_filesystem) || (__cplusplus >= 201703L)
+        namespace fs = std::filesystem;
+#else
+        namespace fs = std::experimental::filesystem;
+#endif
+        typedef std::vector<fs::path> TFileList;
+        
+        void TC_CFRAMEWORK_API GetFileList(fs::path const& path, TFileList& result_set, bool recurisve, const std::regex* filter = nullptr);
+        void TC_CFRAMEWORK_API CreateDir(fs::path const& path);
 
-        inline bool FileExists(char const* fileName)
+        inline bool FileExists(const char* fileName)
         {
-            namespace fs = std::filesystem;
             return fs::exists(fileName);
         }
     }
