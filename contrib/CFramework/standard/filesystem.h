@@ -4,6 +4,7 @@
 #include "Platform/Common.h"
 #include <filesystem>
 #include <regex>
+#include <filesystem>
 
 namespace System
 {
