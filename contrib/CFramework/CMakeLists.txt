@@ -39,7 +39,7 @@ set_target_properties(CFramework
       FOLDER
         "Contrib")
 
-set_target_properties(cframework PROPERTIES
+set_target_properties(CFramework PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
 )
