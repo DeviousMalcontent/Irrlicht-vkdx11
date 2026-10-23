@@ -1,5 +1,3 @@
-add_compile_options(-std=c++17)
-
 SET(MODUL_NAME "CFramework")
 SET(MODUL_LINKAGE "SHARED")
 SET(MODUL_LINK_LIBS "")
@@ -15,12 +13,6 @@ PRIVATE
 file(GLOB_RECURSE MODUL_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp *.c *.cc *.hpp *.h)
 
 CreateLibrary("CFramework" "${MODUL_SRCS}" "${MODUL_LINKAGE}" "${MODUL_LINK_LIBS}" "${MODUL_LINK_FLAGS}")
-
-set_target_properties(CFramework PROPERTIES
-    CXX_STANDARD 17
-    CXX_STANDARD_REQUIRED ON
-)
-
 CreateCxxPch("CFramework" "${CMAKE_CURRENT_SOURCE_DIR}/StdAfx.h" "${CMAKE_CURRENT_SOURCE_DIR}/StdAfx.cpp")
 
 target_include_directories(CFramework
@@ -41,8 +33,3 @@ set_target_properties(CFramework
     PROPERTIES
       FOLDER
         "Contrib")
-
-set_target_properties(CFramework PROPERTIES
-    CXX_STANDARD 17
-    CXX_STANDARD_REQUIRED ON
-)
