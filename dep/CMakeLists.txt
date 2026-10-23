@@ -1,3 +1,7 @@
+if(UNIX)
+    return()
+endif()
+
 AddBuildInLibrary( glm glm )
 AddBuildInLibrary( jpeglib jpeglib )
 AddBuildInLibrary( libpng libpng )
