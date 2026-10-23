@@ -134,7 +134,7 @@ namespace System
             T* operator[](K key)
             {
                 T* ret = nullptr;
-                StorageType::iterator i;
+                typename StorageType::iterator i;
 
                 if (ReadLock)
                     ReadLock();
@@ -150,7 +150,7 @@ namespace System
 
             bool Exist(K key)
             {
-                StorageType::iterator i;
+                typename StorageType::iterator i;
                 if (ReadLock)
                     ReadLock();
 
