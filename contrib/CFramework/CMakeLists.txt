@@ -38,3 +38,8 @@ set_target_properties(CFramework
     PROPERTIES
       FOLDER
         "Contrib")
+
+set_target_properties(cframework PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+)
