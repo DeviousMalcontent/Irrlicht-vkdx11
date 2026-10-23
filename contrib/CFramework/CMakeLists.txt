@@ -1,3 +1,14 @@
+SET(MODUL_NAME "CFramework")
+SET(MODUL_LINKAGE "SHARED")
+SET(MODUL_LINK_LIBS "")
+SET(MODUL_LINK_FLAGS "")
+
+list(APPEND MODUL_LINK_LIBS
+PRIVATE
+    ZLIB
+	glm
+)
+
 add_compile_options(-std=c++17)
 
 # Glob only and not recurse, there are other libs for that
