@@ -115,7 +115,7 @@ namespace System
                 if (WriteLock)
                     WriteLock();
 
-                StorageType::iterator i;
+                typename StorageType::iterator i;
                 if (GetContains(m_container, key, i))
                 {
                     delete i->second;
