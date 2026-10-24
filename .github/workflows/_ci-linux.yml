@@ -33,6 +33,8 @@ jobs:
             libjpeg-dev \
             libpng-dev \
             libx11-dev
+            libxxf86vm-dev \
+            libxext-dev
 
           sudo ar rcs /usr/lib/x86_64-linux-gnu/libglm.a
 
