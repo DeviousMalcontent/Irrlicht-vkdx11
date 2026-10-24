@@ -3,7 +3,11 @@ SET(MODUL_LINKAGE "SHARED")
 SET(MODUL_LINK_LIBS "")
 SET(MODUL_LINK_FLAGS "")
 
-list(APPEND MODUL_LINK_LIBS PRIVATE ZLIB)
+list(APPEND MODUL_LINK_LIBS
+PRIVATE
+    ZLIB
+	glm
+)
 
 # Glob only and not recurse, there are other libs for that
 file(GLOB_RECURSE MODUL_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp *.c *.cc *.hpp *.h)
