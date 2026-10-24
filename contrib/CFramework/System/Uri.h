@@ -18,6 +18,12 @@
 #ifndef __CF_URI_H__
 #define __CF_URI_H__
 
+#pragma once
+#include <string>
+#include <cstdint>
+
+typedef uint16_t uint16;
+
 namespace System
 {
     enum class UriValidationError
