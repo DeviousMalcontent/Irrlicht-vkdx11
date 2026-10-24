@@ -6,7 +6,7 @@ SET(MODUL_LINK_FLAGS "")
 list(APPEND MODUL_LINK_LIBS
 PRIVATE
     ZLIB
-	glm
+#	glm
 )
 
 # Glob only and not recurse, there are other libs for that
