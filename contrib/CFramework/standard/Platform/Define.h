@@ -175,7 +175,7 @@ virtual void somefunc() _OVERRIDE_;
 //#  define PACK_BEGIN(x) _Pragma("pack(" ## STRINGIFY(x) ## ")")
 //#  define PACK_END _Pragma("pack()")
 #  define PACK_BEGIN(x) _Pragma(STRINGIFY(pack(push, x)))
-#  define PACK_END()    _Pragma(STRINGIFY(pack(pop)))
+#  define PACK_END      _Pragma(STRINGIFY(pack(pop)))
 #endif //PLATFORM
 
 typedef int64_t int64;
@@ -234,7 +234,10 @@ typedef uint64      QWORD;
 #endif
 
 #ifndef WIN32
-#  define TC_CFRAMEWORK_API 
+#  undef TC_CFRAMEWORK_API
+#  define TC_CFRAMEWORK_API
+#  undef TC_API_EXPORT
+#  define TC_API_EXPORT
 #endif
 
 #ifdef TC_DYNAMIC_CFRAMEWORK

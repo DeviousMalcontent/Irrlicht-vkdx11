@@ -20,6 +20,7 @@ target_include_directories(CFramework
         ${CMAKE_CURRENT_BINARY_DIR}
         ${CMAKE_CURRENT_BINARY_DIR}/.Assembly
         ${CMAKE_BINARY_DIR}
+        ${CMAKE_SOURCE_DIR}/dep
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR})
 
