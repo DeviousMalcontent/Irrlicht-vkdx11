@@ -22,6 +22,13 @@
 #include <string>
 #include <cstdint>
 
+#ifndef WIN32
+#  ifdef TC_CFRAMEWORK_API
+#    undef TC_CFRAMEWORK_API
+#  endif
+#  define TC_CFRAMEWORK_API
+#endif
+
 typedef uint16_t uint16;
 typedef uint32_t uint32;
 
