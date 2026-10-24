@@ -8,7 +8,6 @@ if(UNIX)
     target_include_directories(glm INTERFACE "${CMAKE_SOURCE_DIR}/dep")
 endif()
 
-
 list(APPEND MODUL_LINK_LIBS
 PRIVATE
     ZLIB
