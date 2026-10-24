@@ -3,11 +3,6 @@ SET(MODUL_LINKAGE "SHARED")
 SET(MODUL_LINK_LIBS "")
 SET(MODUL_LINK_FLAGS "")
 
-if(UNIX)
-    add_library(glm INTERFACE)
-    target_include_directories(glm INTERFACE "${CMAKE_SOURCE_DIR}/dep")
-endif()
-
 list(APPEND MODUL_LINK_LIBS
 PRIVATE
     ZLIB
