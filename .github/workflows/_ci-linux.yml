@@ -32,7 +32,7 @@ jobs:
             libglm-dev \
             libjpeg-dev \
             libpng-dev \
-            libx11-dev
+            libx11-dev \
             libxxf86vm-dev \
             libxext-dev
 
