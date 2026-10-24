@@ -1,4 +1,5 @@
 #include "Uri.h"
+#include "../standard/Errors.h"
 
 System::URI::URI(std::string const& uriString, bool absolute)
 {
