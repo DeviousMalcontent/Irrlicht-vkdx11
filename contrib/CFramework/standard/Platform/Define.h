@@ -240,15 +240,19 @@ typedef uint64      QWORD;
 #  define TC_API_EXPORT
 #endif
 
-#ifdef TC_DYNAMIC_CFRAMEWORK
-#ifdef TC_API_EXPORT_CFRAMEWORK
-#  define TC_CFRAMEWORK_API TC_API_EXPORT
-#else
-#  define TC_CFRAMEWORK_API TC_API_IMPORT
-#endif
-#else
-#  define TC_CFRAMEWORK_API MODUL_DLL_DECL
-#endif
+# ifdef WIN32
+#   ifdef TC_DYNAMIC_CFRAMEWORK
+#     ifdef TC_API_EXPORT_CFRAMEWORK
+#       define TC_CFRAMEWORK_API TC_API_EXPORT
+#     else
+#       define TC_CFRAMEWORK_API TC_API_IMPORT
+#     endif
+#   else
+#     define TC_CFRAMEWORK_API MODUL_DLL_DECL
+#   endif
+# else
+#   define TC_CFRAMEWORK_API
+# endif
 
 #ifdef TC_DYNAMIC_XUI
 #ifdef TC_API_EXPORT_XUI

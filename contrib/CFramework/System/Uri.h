@@ -14,15 +14,16 @@
 * You should have received a copy of the GNU General Public License along
 * with this program. If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef __CF_URI_H__
 #define __CF_URI_H__
 
 #pragma once
+
 #include <string>
 #include <cstdint>
 
 typedef uint16_t uint16;
+typedef uint32_t uint32;
 
 namespace System
 {

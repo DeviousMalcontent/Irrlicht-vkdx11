@@ -1,7 +1,12 @@
 #ifndef CFRAMEWORK_SPLINE_H
 #define CFRAMEWORK_SPLINE_H
 
+#include <vector>
+#include <cstdint>
+
 #include "glm/vec2.hpp"
+
+typedef uint8_t uint8;
 
 namespace System::Spline
 {
