@@ -4,6 +4,8 @@
 //#include "extra_string.h"
 #include <locale>
 
+#include "System/rtString.h"
+
 using namespace irr;
 using namespace gui;
 

@@ -35,6 +35,10 @@
 #define FLT_MIN 1.17549435e-38F
 #endif
 
+#ifndef _MSC_VER
+#  define __forceinline __attribute__((always_inline)) inline
+#endif
+
 namespace irr
 {
 namespace core

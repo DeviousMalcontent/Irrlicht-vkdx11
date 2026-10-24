@@ -29,7 +29,10 @@ jobs:
             glslang-dev \
             spirv-tools \
             libfmt-dev \
-            libglm-dev
+            libglm-dev \
+            libjpeg-dev \
+            libpng-dev \
+            libx11-dev
 
           sudo ar rcs /usr/lib/x86_64-linux-gnu/libglm.a
 
