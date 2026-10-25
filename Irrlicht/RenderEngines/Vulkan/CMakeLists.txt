@@ -20,7 +20,10 @@ file(GLOB_RECURSE RESOURCE_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.vert *.fr
 
 LIST(APPEND CVulkan_Source ${RESOURCE_GENERATED_FILES})
 
+set(_IRR_DYNAMIC_ false)
 CreateLibrary("CVulkan" "${CVulkan_Source}" "${LIBTYPE}" "" "")
+target_link_libraries(CVulkan PRIVATE Vulkan::Vulkan ZLIB Glslang glm CFramework)
+set_target_properties(CVulkan PROPERTIES FOLDER "RenderEngine/IrrLicht") 
 
 if(NOT UNIX)
     add_dependencies(CVulkan ZLIB Glslang)
