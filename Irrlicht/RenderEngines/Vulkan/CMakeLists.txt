@@ -22,6 +22,7 @@ target_include_directories(CVulkan PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     "/usr/include/glslang"
     "${CMAKE_SOURCE_DIR}/contrib/CFramework"
+    "${CMAKE_SOURCE_DIR}/dep/SPIRV/Glslang"
 )
 
 if(NOT UNIX)
