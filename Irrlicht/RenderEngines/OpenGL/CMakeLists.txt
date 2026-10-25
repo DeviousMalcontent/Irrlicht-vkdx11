@@ -58,9 +58,6 @@ else()
     add_definitions(-D_IRR_COMPILE_WITH_OPENGL_)
     add_definitions(-DIRRLICHT_EXPORTS)
     
-    target_link_libraries (IrrOpenGL LINK_INTERFACE_LIBRARIES
-        irrlicht
-    )
 endif(_IRR_DYNAMIC_)
 
 set_target_properties(IrrOpenGL

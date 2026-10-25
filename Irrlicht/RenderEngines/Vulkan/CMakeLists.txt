@@ -6,6 +6,14 @@ else(_IRR_DYNAMIC_)
  set(LIBTYPE STATIC)
 endif(_IRR_DYNAMIC_)
 
+
+file(GLOB_RECURSE CVulkan_Source RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp *.c *.h *.hpp *.vert *.frag)
+file(GLOB_RECURSE RESOURCE_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.vert *.frag)
+
+LIST(APPEND CVulkan_Source ${RESOURCE_GENERATED_FILES})
+
+set(_IRR_DYNAMIC_ false)
+CreateLibrary("CVulkan" "${CVulkan_Source}" "${LIBTYPE}" "" "")
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
@@ -15,31 +23,11 @@ target_include_directories(CVulkan PRIVATE
     "/usr/include/glslang"
 )
 
-file(GLOB_RECURSE CVulkan_Source RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp *.c *.h *.hpp *.vert *.frag)
-file(GLOB_RECURSE RESOURCE_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.vert *.frag)
-
-LIST(APPEND CVulkan_Source ${RESOURCE_GENERATED_FILES})
-
-set(_IRR_DYNAMIC_ false)
-CreateLibrary("CVulkan" "${CVulkan_Source}" "${LIBTYPE}" "" "")
-target_link_libraries(CVulkan PRIVATE Vulkan::Vulkan ZLIB Glslang glm CFramework)
-set_target_properties(CVulkan PROPERTIES FOLDER "RenderEngine/IrrLicht") 
-
 if(NOT UNIX)
     add_dependencies(CVulkan ZLIB Glslang)
 else()
     add_dependencies(CVulkan ZLIB)
 endif()
-
-target_link_libraries (CVulkan
-    Vulkan::Vulkan
-    ZLIB
-    Glslang
-    glm
-)
-
-target_link_libraries (CVulkan
-    CFramework)
 
 resource_build(
     TARGET "CVulkan"
@@ -66,10 +54,7 @@ else()
     add_definitions(-D_LIB_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
     add_definitions(-D_IRR_COMPILE_WITH_VULKAN_)
     add_definitions(-DIRRLICHT_EXPORTS)
-
-    target_link_libraries (CVulkan LINK_INTERFACE_LIBRARIES
-        irrlicht
-    )
+    
 endif(_IRR_DYNAMIC_)
 
 set_target_properties(CVulkan
