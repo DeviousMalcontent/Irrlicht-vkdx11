@@ -5,6 +5,7 @@
 #include "SMaterial.h"
 #include "IMeshBuffer.h"
 #include "IDynamicMeshBuffer.h"
+#include <stdexcept>
 
 #include <vector>
 

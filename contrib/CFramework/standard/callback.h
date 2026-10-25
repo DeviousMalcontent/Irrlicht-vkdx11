@@ -1,4 +1,6 @@
 #pragma once
+#include <string>
+
 #ifndef __SYSTEM_ASYNC_CALLBACK_H
 #define __SYSTEM_ASYNC_CALLBACK_H
 

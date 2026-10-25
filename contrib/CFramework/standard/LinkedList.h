@@ -221,7 +221,8 @@ namespace System
                 {                                           // postdecrement
                     if (!_Ptr) return NULL;
 
-                    iterator _Tmp = *this;
+                    //iterator _Tmp = *this;
+                    auto _Tmp = *this;
                     --*this;
                     return (_Tmp);
                 }

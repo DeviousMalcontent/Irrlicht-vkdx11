@@ -3,6 +3,8 @@
 // For conditions of distribution and use, see copyright notice in irrlicht.h
 
 #include "CIrrDeviceLinux.h"
+#include <clocale>
+
 
 #ifdef _IRR_COMPILE_WITH_X11_DEVICE_
 
