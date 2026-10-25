@@ -21,6 +21,7 @@ include_directories(
 target_include_directories(CVulkan PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     "/usr/include/glslang"
+    "${CMAKE_SOURCE_DIR}/contrib/CFramework"
 )
 
 if(NOT UNIX)
@@ -54,7 +55,7 @@ else()
     add_definitions(-D_LIB_SOURCE_ROOT="${CMAKE_CURRENT_SOURCE_DIR}")
     add_definitions(-D_IRR_COMPILE_WITH_VULKAN_)
     add_definitions(-DIRRLICHT_EXPORTS)
-    
+
 endif(_IRR_DYNAMIC_)
 
 set_target_properties(CVulkan
