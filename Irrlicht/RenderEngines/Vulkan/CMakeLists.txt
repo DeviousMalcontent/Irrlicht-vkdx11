@@ -10,6 +10,11 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
+target_include_directories(CVulkan PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    "/usr/include/glslang"
+)
+
 file(GLOB_RECURSE CVulkan_Source RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp *.c *.h *.hpp *.vert *.frag)
 file(GLOB_RECURSE RESOURCE_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.vert *.frag)
 

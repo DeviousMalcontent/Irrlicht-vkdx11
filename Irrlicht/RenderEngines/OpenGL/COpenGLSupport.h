@@ -28,8 +28,13 @@ THE SOFTWARE.
 #ifndef __OPENGLSUPPORT_H__
 #define __OPENGLSUPPORT_H__
 
-#define GL_GLEXT_LEGACY
-#define GLX_GLXEXT_LEGACY
+#undef GL_GLEXT_LEGACY
+#define GL_GLEXT_LEGACY 1
+
+#undef GLX_GLXEXT_LEGACY
+#define GLX_GLXEXT_LEGACY 1
+
+#include "glew.h"
 
 #ifdef _IRR_COMPILE_WITH_OPENGL_
 #include <string>

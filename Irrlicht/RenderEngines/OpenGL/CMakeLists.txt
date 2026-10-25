@@ -24,6 +24,8 @@ target_link_libraries (IrrOpenGL
 target_link_libraries (IrrOpenGL
     CFramework)
 
+target_link_libraries(IrrOpenGL PRIVATE X11 Xext Xxf86vm)
+
 resource_build(
     TARGET "IrrOpenGL"
     GENERATED_DIR "${CMAKE_BINARY_DIR}"
