@@ -13,6 +13,7 @@
 #include "glslang/MachineIndependent/reflection.h"
 #include "SPIRV/GlslangToSpv.h"
 #include "glslang/Include/Common.h"
+#include "glslang/Include/intermediate.h"
 
 using namespace irr;
 using namespace irr::video;

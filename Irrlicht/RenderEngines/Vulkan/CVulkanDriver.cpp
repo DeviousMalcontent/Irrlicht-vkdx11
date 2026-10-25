@@ -342,10 +342,19 @@ void irr::video::CVulkanDriver::initialize(void* param)
 #if VK_HEADER_VERSION <= 82
     VulkanDispatcherExt.init(_instance);
 #else
-    auto m_hVulkanDLL = LoadLibrary("vulkan-1.dll");
-    PFN_vkGetInstanceProcAddr vkGetInstanceProcAddr = PFN_vkGetInstanceProcAddr(GetProcAddress(m_hVulkanDLL, "vkGetInstanceProcAddr"));
-
-    VulkanDispatcherExt.init(_instance, vkGetInstanceProcAddr);
+    #ifdef WIN32
+        auto m_hVulkanDLL = LoadLibrary("vulkan-1.dll");
+        PFN_vkGetInstanceProcAddr vkGetInstanceProcAddr = PFN_vkGetInstanceProcAddr(GetProcAddress(m_hVulkanDLL, "vkGetInstanceProcAddr"));
+    #else
+        // Natively use POSIX dynamic loading utilities on Linux systems
+        #include <dlfcn.h>
+        void* m_hVulkanDLL = dlopen("libvulkan.so.1", RTLD_NOW | RTLD_LOCAL);
+        if (!m_hVulkanDLL) {
+            m_hVulkanDLL = dlopen("libvulkan.so", RTLD_NOW | RTLD_LOCAL);
+        }
+        PFN_vkGetInstanceProcAddr vkGetInstanceProcAddr = PFN_vkGetInstanceProcAddr(dlsym(m_hVulkanDLL, "vkGetInstanceProcAddr"));
+    #endif
+        VulkanDispatcherExt.init(_instance, vkGetInstanceProcAddr);
 #endif
 
     // Set up debugging
