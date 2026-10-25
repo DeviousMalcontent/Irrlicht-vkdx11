@@ -59,7 +59,13 @@ function(resource_prebuild)
     #set(${PREBUILD_RS_OUT_GENERATED_FILES} "${GENERATED_FILES}" PARENT_SCOPE)
 endfunction ()
 
+
 function(resource_build)
+
+    if(UNIX)
+        return()
+    endif()
+
     set(ONE_VALUE_ARGS
         TARGET
         SOURCE_ROOT
