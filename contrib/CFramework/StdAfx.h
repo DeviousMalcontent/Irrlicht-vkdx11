@@ -2,12 +2,18 @@
 #define __STDAFX_H__
 
 #define NOMINMAX
+#define GLEW_STATIC 1
+#define GL_GLEXT_LEGACY 1
 
 #ifdef max
   #undef max
 #endif
 #ifdef min
   #undef min
+#endif
+
+#ifndef WIN32
+#   include <GL/glew.h>
 #endif
 
 #include <algorithm>

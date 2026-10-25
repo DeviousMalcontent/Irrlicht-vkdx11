@@ -25,20 +25,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -----------------------------------------------------------------------------
 */
-
+#ifndef WIN32
+#   define __glext_h_ 1
+#   define __glxext_h_ 1
+#   define GL_GLEXT_LEGACY 1
+#   define GLX_GLXEXT_LEGACY 1
+#   define GL_GLEXT_PROTOTYPES 0
+#endif
 
 #ifndef __OPENGLSUPPORT_H__
 #define __OPENGLSUPPORT_H__
-
-#ifndef WIN32
-#   undef GL_GLEXT_LEGACY
-#   define GL_GLEXT_LEGACY 1
-#   undef GLX_GLXEXT_LEGACY
-#   define GLX_GLXEXT_LEGACY 1
-#   define __glext_h_ 1     // Standard lock signature to trick Mesa headers
-#   define __glxext_h_ 1    // Standard lock signature to trick X11 headers
-#   define GL_GLEXT_PROTOTYPES 0
-#endif
 
 #ifdef _IRR_COMPILE_WITH_OPENGL_
 #include <string>
