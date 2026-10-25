@@ -28,6 +28,8 @@ THE SOFTWARE.
 #ifndef __OPENGLSUPPORT_H__
 #define __OPENGLSUPPORT_H__
 
+#undef APIENTRY
+
 #undef GL_GLEXT_LEGACY
 #define GL_GLEXT_LEGACY 1
 
