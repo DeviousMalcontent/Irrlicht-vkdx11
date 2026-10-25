@@ -28,6 +28,9 @@ THE SOFTWARE.
 #ifndef __OPENGLSUPPORT_H__
 #define __OPENGLSUPPORT_H__
 
+#define GL_GLEXT_LEGACY
+#define GLX_GLXEXT_LEGACY
+
 #ifdef _IRR_COMPILE_WITH_OPENGL_
 #include <string>
 
