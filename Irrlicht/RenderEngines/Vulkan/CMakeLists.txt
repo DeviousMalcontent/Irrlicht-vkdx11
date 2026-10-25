@@ -17,7 +17,12 @@ LIST(APPEND CVulkan_Source ${RESOURCE_GENERATED_FILES})
 
 CreateLibrary("CVulkan" "${CVulkan_Source}" "${LIBTYPE}" "" "")
 
-add_dependencies(CVulkan ZLIB Glslang)
+if(NOT UNIX)
+    add_dependencies(CVulkan ZLIB Glslang)
+else()
+    add_dependencies(CVulkan ZLIB)
+endif()
+
 target_link_libraries (CVulkan
     Vulkan::Vulkan
     ZLIB
