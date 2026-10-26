@@ -8,7 +8,7 @@ endif(_IRR_DYNAMIC_)
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
-    #${CMAKE_CURRENT_SOURCE_DIR}/GL
+    ${CMAKE_CURRENT_SOURCE_DIR}/GL
     #${OPENGL_INCLUDE_DIRS}
 )
 
