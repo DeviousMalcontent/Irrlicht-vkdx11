@@ -2,18 +2,23 @@
 #define __STDAFX_H__
 
 #define NOMINMAX
-#define GLEW_STATIC 1
-#define GL_GLEXT_LEGACY 1
+#ifndef WIN32
+#   define GLEW_STATIC 1
+#   define GL_GLEXT_LEGACY 1
+#   define GLX_GLXEXT_LEGACY 1
+#   define __glext_h_ 1
+#   define __glxext_h_ 1
+#   define __glext_h_ festival_bypass
+#   define __glxext_h_ festival_bypass
+#   define GL_GLEXT_PROTOTYPES 0
+#   include <GL/glew.h>
+#endif
 
 #ifdef max
   #undef max
 #endif
 #ifdef min
   #undef min
-#endif
-
-#ifndef WIN32
-#   include <GL/glew.h>
 #endif
 
 #include <algorithm>
