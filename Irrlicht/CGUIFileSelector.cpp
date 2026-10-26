@@ -1,5 +1,6 @@
 #include "irrlicht.h"
 #include "CGUIFileSelector.h"
+#include "../contrib/CFramework/System/rtString.h"
 #include "irrString.h"
 //#include "extra_string.h"
 #include <locale>
