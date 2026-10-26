@@ -79,12 +79,11 @@ THE SOFTWARE.
 #endif
 #endif
 
-#ifdef _WIN32
-#include <GL/wglew.h>
-#else
-#include <GL/glxew.h>
-#include <GL/glext.h>
-#endif
+# include <GL/glxew.h>
+# ifdef WIN32
+#   include <GL/glext.h>
+# endif
+
 
 #ifndef APIENTRY
 #define APIENTRY
