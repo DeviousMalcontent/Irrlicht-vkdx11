@@ -26,11 +26,12 @@ THE SOFTWARE.
 -----------------------------------------------------------------------------
 */
 #ifndef WIN32
-#   define __glext_h_ 1
-#   define __glxext_h_ 1
 #   define GL_GLEXT_LEGACY 1
 #   define GLX_GLXEXT_LEGACY 1
-#   define GL_GLEXT_PROTOTYPES 0
+#   define __glext_h_ 1
+#   define __glxext_h_ 1
+#   define __glext_h_ festival_bypass
+#   define __glxext_h_ festival_bypass
 #endif
 
 #ifndef __OPENGLSUPPORT_H__

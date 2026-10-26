@@ -17,7 +17,7 @@
 #include "glslang/Public/ShaderLang.h"
 
 using namespace irr;
-using namespace irr::video
+using namespace irr::video;
 
 typedef glslang::TIntermediate TIntermediate;
 
