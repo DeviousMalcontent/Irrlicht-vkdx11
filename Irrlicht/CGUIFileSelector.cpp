@@ -1092,7 +1092,8 @@ core::stringw CGUIFileSelector::translateDOS(core::stringw input)
 	//Ubutu should store the filenames in UTF8, Windows in UTF16
 	wchar_t out[255];
 	core::stringc in = core::stringc(input);
-	return core::stringw(utf8_to_wide(in.c_str()).c_str());
+	//return core::stringw(utf8_to_wide(in.c_str()).c_str());
+	return core::stringw(System::utf8_to_wide(in.c_str()).c_str());
 #endif
 
 	core::stringw result=L"";
