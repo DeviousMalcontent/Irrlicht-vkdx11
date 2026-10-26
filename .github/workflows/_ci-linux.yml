@@ -37,7 +37,8 @@ jobs:
             libxext-dev \
             libgl1-mesa-dev \
             libglu1-mesa-dev \
-            libvulkan-dev
+            libvulkan-dev \
+            libglew-dev
 
           sudo ar rcs /usr/lib/x86_64-linux-gnu/libglm.a
 

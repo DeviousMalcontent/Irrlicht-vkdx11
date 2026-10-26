@@ -14,6 +14,7 @@
 #include "SPIRV/GlslangToSpv.h"
 #include "glslang/Include/Common.h"
 #include "glslang/Include/intermediate.h"
+#include "glslang/Public/ShaderLang.h"
 
 using namespace irr;
 using namespace irr::video;
