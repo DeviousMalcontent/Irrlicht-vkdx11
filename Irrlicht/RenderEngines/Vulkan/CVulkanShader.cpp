@@ -15,7 +15,7 @@
 #include "glslang/Include/Common.h"
 #include "glslang/Include/intermediate.h"
 #include "glslang/Public/ShaderLang.h"
-#include "glslang/AST/Intermediate.h"
+#include "glslang/ast/Intermediate.h"
 
 using namespace irr;
 using namespace irr::video;
