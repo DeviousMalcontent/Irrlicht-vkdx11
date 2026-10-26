@@ -208,6 +208,17 @@ target_include_directories(irrlicht INTERFACE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+if(UNIX)
+    add_library(libjpeg INTERFACE)
+    target_link_libraries(libjpeg INTERFACE jpeg)
+
+    add_library(libpng INTERFACE)
+    target_link_libraries(libpng INTERFACE png)
+
+    add_library(Glslang INTERFACE)
+    target_link_libraries(Glslang INTERFACE glslang)
+endif()
+
 target_link_libraries (irrlicht
 PRIVATE
     CFramework)
