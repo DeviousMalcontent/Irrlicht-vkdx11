@@ -19,11 +19,11 @@
 # 3. This notice may not be removed or altered from any source distribution.
 #
 
+cmake_minimum_required(VERSION 2.6)
+
 if(UNIX)
     link_libraries(glslang SPIRV-Tools SPIRV-Tools-opt)
 endif()
-
-cmake_minimum_required(VERSION 2.6)
 
 message(STATUS " -> Configure all examples:")
 
