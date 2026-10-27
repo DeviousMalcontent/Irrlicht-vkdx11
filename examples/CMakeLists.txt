@@ -1,6 +1,6 @@
 # The ZLIB license
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # This software is provided 'as-is', without any express or implied
 # warranty. In no event will the authors be held liable for any damages
@@ -24,6 +24,10 @@ cmake_minimum_required(VERSION 2.6)
 message(STATUS " -> Configure all examples:")
 
 SET(IRRLICHT_MEDIA_DIR   "${CMAKE_SOURCE_DIR}/../media" CACHE PATH "The directory where the media files are stored in.")
+
+if(UNIX)
+    link_libraries(glslang SPIRV-Tools SPIRV-Tools-opt)
+endif()
 
 ADD_SUBDIRECTORY(01.HelloWorld)
 ADD_SUBDIRECTORY(02.Quake3Map)
