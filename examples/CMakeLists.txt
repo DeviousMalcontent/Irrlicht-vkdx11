@@ -22,7 +22,13 @@
 cmake_minimum_required(VERSION 2.6)
 
 if(UNIX)
-    link_libraries(glslang SPIRV-Tools SPIRV-Tools-opt)
+     link_libraries(
+        "-Wl,--start-group"
+        glslang 
+        SPIRV-Tools 
+        SPIRV-Tools-opt
+        "-Wl,--end-group"
+    )
 endif()
 
 message(STATUS " -> Configure all examples:")
