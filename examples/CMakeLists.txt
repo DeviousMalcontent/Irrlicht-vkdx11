@@ -19,15 +19,15 @@
 # 3. This notice may not be removed or altered from any source distribution.
 #
 
+if(UNIX)
+    link_libraries(glslang SPIRV-Tools SPIRV-Tools-opt)
+endif()
+
 cmake_minimum_required(VERSION 2.6)
 
 message(STATUS " -> Configure all examples:")
 
 SET(IRRLICHT_MEDIA_DIR   "${CMAKE_SOURCE_DIR}/../media" CACHE PATH "The directory where the media files are stored in.")
-
-if(UNIX)
-    link_libraries(glslang SPIRV-Tools SPIRV-Tools-opt)
-endif()
 
 ADD_SUBDIRECTORY(01.HelloWorld)
 ADD_SUBDIRECTORY(02.Quake3Map)
