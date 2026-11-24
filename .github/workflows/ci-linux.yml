@@ -21,51 +21,32 @@ jobs:
     steps:
     - uses: actions/checkout@v4
  
-    - name: Cache and install dependencies
-      uses: awalsh128/cache-apt-pkgs-action@latest
+    - name: Cache apt packages
+      uses: actions/cache@v4
       with:
-        packages: >-
-          binutils-dev
-          libiberty-dev
-          glslang-dev
-          spirv-tools
-          libfmt-dev
-          libglm-dev
-          libjpeg-dev
-          libpng-dev
-          libx11-dev
-          libxxf86vm-dev
-          libxext-dev
-          libgl1-mesa-dev
-          libglu1-mesa-dev
-          libvulkan-dev
+        path: /var/cache/apt/archives
+        key: apt-cache-${{ runner.os }}-${{ hashFiles('.github/workflows/*.yml') }}-v1
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y --no-install-recommends \
+          binutils-dev \
+          libiberty-dev \
+          glslang-dev \
+          spirv-tools \
+          libfmt-dev \
+          libglm-dev \
+          libjpeg-dev \
+          libpng-dev \
+          libx11-dev \
+          libxxf86vm-dev \
+          libxext-dev \
+          libgl1-mesa-dev \
+          libglu1-mesa-dev \
+          libvulkan-dev \
           libglew-dev
-        version: 1.0
-
-    - name: Create dummy libglm.a archive
-      run: sudo ar rcs /usr/lib/x86_64-linux-gnu/libglm.a
-
-#    - name: Install dependencies
-#      run: |
-#          sudo apt-get update
-#          sudo apt-get install -y --no-install-recommends \
-#            binutils-dev \
-#            libiberty-dev \
-#            glslang-dev \
-#            spirv-tools \
-#            libfmt-dev \
-#            libglm-dev \
-#            libjpeg-dev \
-#            libpng-dev \
-#            libx11-dev \
-#            libxxf86vm-dev \
-#            libxext-dev \
-#            libgl1-mesa-dev \
-#            libglu1-mesa-dev \
-#            libvulkan-dev \
-#            libglew-dev
-#
-#          sudo ar rcs /usr/lib/x86_64-linux-gnu/libglm.a
+        sudo ar rcs /usr/lib/x86_64-linux-gnu/libglm.a
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
