@@ -90,4 +90,4 @@ jobs:
         tag_name: ci_testing
         prerelease: true
         files: |
-          ${{ github.workspace }}/Irrlicht-vkdx11-linux.tar.gz
+          ${{ github.workspace }}/Irrlicht-Vulkan-Linux.tar.gz
