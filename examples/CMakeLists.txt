@@ -19,17 +19,11 @@
 # 3. This notice may not be removed or altered from any source distribution.
 #
 
-cmake_minimum_required(VERSION 2.6)
-
 if(UNIX)
-     link_libraries(
-        "-Wl,--start-group"
-        glslang 
-        SPIRV-Tools 
-        SPIRV-Tools-opt
-        "-Wl,--end-group"
-    )
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--start-group -lglslang -lglslang-default-resource-limits -lSPIRV-Tools-opt -lSPIRV-Tools -Wl,--end-group -lpthread")
 endif()
+
+cmake_minimum_required(VERSION 2.6)
 
 message(STATUS " -> Configure all examples:")
 
