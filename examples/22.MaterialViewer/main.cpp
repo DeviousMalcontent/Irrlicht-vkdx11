@@ -554,7 +554,9 @@ void SMaterialControl::updateMaterial(video::SMaterial & material)
 		{
 			//material.TextureLayer[i].Texture = Driver->getTexture( io::path(TextureControls[i]->getSelectedTextureName()) );
 			// fix null pointer
-			material.TextureLayer[i].Texture = (irr::video::ITexture*)Driver->getTexture(io::path(TextureControls[i]->getSelectedTextureName()));
+			
+			//material.TextureLayer[i].Texture = (irr::video::ITexture*)Driver->getTexture(io::path(TextureControls[i]->getSelectedTextureName()));
+			material.setTexture(i, Driver->getTexture(io::path(TextureControls[i]->getSelectedTextureName())));
 		}
 	}
 }
