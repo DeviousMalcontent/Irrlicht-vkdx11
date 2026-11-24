@@ -1,5 +1,8 @@
 name: CI - Linux
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ "linux_ci_build" ]
@@ -87,4 +90,4 @@ jobs:
         tag_name: ci_testing
         prerelease: true
         files: |
-          ${{ github.workspace }}/dist/Irrlicht-vkdx11-linux.tar.gz
+          ${{ github.workspace }}/Irrlicht-vkdx11-linux.tar.gz
