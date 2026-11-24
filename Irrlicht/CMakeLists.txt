@@ -214,9 +214,6 @@ if(UNIX)
 
     add_library(libpng INTERFACE)
     target_link_libraries(libpng INTERFACE png)
-
-    add_library(Glslang INTERFACE)
-    target_link_libraries(Glslang INTERFACE glslang)
 endif()
 
 target_link_libraries (irrlicht

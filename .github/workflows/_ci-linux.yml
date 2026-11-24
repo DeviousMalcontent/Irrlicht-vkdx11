@@ -2,9 +2,9 @@ name: CI - Linux
 
 on:
   push:
-    branches: [ "linux_ci_build" ]
+    branches: [ "linux-vulkan-fix" ]
   pull_request:
-    branches: [ "linux_ci_build" ]
+    branches: [ "linux-vulkan-fix" ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
