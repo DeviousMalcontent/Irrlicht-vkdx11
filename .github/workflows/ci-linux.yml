@@ -83,11 +83,14 @@ jobs:
         tar -czf "${{ github.workspace }}/Irrlicht-Vulkan-Linux.tar.gz" -C "${{ github.workspace }}/dist" Irrlicht-Vulkan-Linux
 
     - name: Upload Release Asset
+      if: github.event_name == 'push'
       uses: softprops/action-gh-release@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ci_testing
         prerelease: true
+        overwrite_files: true
+        make_latest: false
         files: |
           ${{ github.workspace }}/Irrlicht-Vulkan-Linux.tar.gz
