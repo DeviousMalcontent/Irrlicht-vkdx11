@@ -229,30 +229,26 @@ if(BUILD_DEPENDENCIES AND NOT EXISTS ${PROJECTDEPS_PATH})
 
     message(STATUS "Building freetype")
     file(DOWNLOAD
-        https://download.savannah.gnu.org/releases/freetype/freetype-2.9.tar.gz
-        ${CMAKE_BINARY_DIR}/freetype-2.9.tar.gz)
+        https://gnu.org
+        ${CMAKE_BINARY_DIR}/freetype-2.15.0.tar.gz)
     execute_process(COMMAND ${CMAKE_COMMAND}
-        -E tar xf freetype-2.9.tar.gz WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+        -E tar xf freetype-2.15.0.tar.gz WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
     # patch toolchain for iOS
     # execute_process(COMMAND ${CMAKE_COMMAND} -E copy
     #   ${CMAKE_SOURCE_DIR}/CMake/toolchain/ios.toolchain.xcode.cmake
     #   freetype-2.9/builds/cmake/iOS.cmake
 	#	WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+    file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/freetype-2.15.0/objs)
     execute_process(COMMAND ${CMAKE_COMMAND}
         -DCMAKE_INSTALL_PREFIX=${PROJECTDEPS_PATH}
-        -DCMAKE_BUILD_TYPE=${DEP_BUILD_TYPE}
-        -DBUILD_SHARED_LIBS=${PROJECTDEPS_SHARED}
-        -DWITH_PNG=OFF
-        -DWITH_BZip2=OFF # tries to use it on iOS otherwise
-        # workaround for broken iOS toolchain in freetype
-        -DPROJECT_SOURCE_DIR=${CMAKE_BINARY_DIR}/freetype-2.9
-        ${CROSS}
-        -G ${CMAKE_GENERATOR}
-        -DCMAKE_GENERATOR_PLATFORM=${CMAKE_GENERATOR_PLATFORM}
-        ${CMAKE_BINARY_DIR}/freetype-2.9
-        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/freetype-2.9/objs)
+        -DBUILD_SHARED_LIBS=${BUILD_SHARED_LIBS}
+        -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
+        ${CMAKE_BINARY_DIR}/freetype-2.15.0
+        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/freetype-2.15.0/objs)
     execute_process(COMMAND ${CMAKE_COMMAND}
-        --build ${CMAKE_BINARY_DIR}/freetype-2.9/objs ${BUILD_COMMAND_OPTS})
+        --build ${CMAKE_BINARY_DIR}/freetype-2.15.0/objs ${BUILD_COMMAND_OPTS})
+    execute_process(COMMAND ${CMAKE_COMMAND}
+        --install ${CMAKE_BINARY_DIR}/freetype-2.15.0/objs)
 
     if(BUILD_USE_SDL2 AND (MSVC OR MINGW)) # other platforms dont need this
         message(STATUS "Building SDL2")
