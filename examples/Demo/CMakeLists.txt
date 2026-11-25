@@ -33,7 +33,7 @@ endif()
 
 add_executable(Demo ${EXAMPLE_SOURCE_FILES})
 
-target_link_libraries(Demo PRIVATE irrlicht)
+target_link_libraries(Demo PRIVATE irrlicht CFramework)
 
 if(UNIX)
     add_custom_command(TARGET Demo POST_BUILD
