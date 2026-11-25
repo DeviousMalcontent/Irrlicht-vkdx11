@@ -46,4 +46,5 @@ set_target_properties(zlib
       FOLDER
         "dep")
 
-add_custom_target(ZLIB DEPENDS zlib)
+add_library(ZLIB INTERFACE)
+target_link_libraries(ZLIB INTERFACE zlib)
