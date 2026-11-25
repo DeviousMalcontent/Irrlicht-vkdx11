@@ -14,6 +14,14 @@ LIST(APPEND CVulkan_Source ${RESOURCE_GENERATED_FILES})
 
 set(_IRR_DYNAMIC_ false)
 CreateLibrary("CVulkan" "${CVulkan_Source}" "${LIBTYPE}" "" "")
+
+find_package(fmt CONFIG QUIET)
+if(fmt_FOUND)
+    target_include_directories(CVulkan PRIVATE $<TARGET_PROPERTY:fmt::fmt-header-only,INTERFACE_INCLUDE_DIRECTORIES>)
+    target_compile_definitions(CVulkan PRIVATE $<TARGET_PROPERTY:fmt::fmt-header-only,INTERFACE_COMPILE_DEFINITIONS>)
+    target_compile_options(CVulkan PRIVATE $<$<CXX_COMPILER_ID:MSVC>:/utf-8>)
+endif()
+
 target_include_directories(CVulkan PRIVATE
     ${Vulkan_INCLUDE_DIR}
     ${VULKAN_INCLUDE_DIR}
