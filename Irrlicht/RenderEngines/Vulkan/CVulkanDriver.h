@@ -332,12 +332,21 @@ namespace irr
             void getSyncSemaphores(u32 deviceIdx, u32 syncMask, VulkanSemaphore** semaphores, u32& count);
 
             /** Returns the primary device that supports swap chain present operations. */
+            /** Returns the primary device that supports swap chain present operations. */
             VulkanDevice* _getPrimaryDevice() const { return mPrimaryDevices; }
             VulkanDevice* _getDevice(u8 idx) const { return mDevices[idx]; }
-            vk::DispatchLoaderDynamic& _getVulkanDispatcher() { return VulkanDispatcherExt; }
+
+#if VK_HEADER_VERSION >= 300
+            using VulkanDynamicDispatcher = vk::detail::DispatchLoaderDynamic;
+#else
+            using VulkanDynamicDispatcher = vk::DispatchLoaderDynamic;
+#endif
+            VulkanDynamicDispatcher& _getVulkanDispatcher() { return VulkanDispatcherExt; }
+
             u32 _getNumDevices() const { return mNumDevices; }
-            VkInstance _getInstance() { return mInstance; }
+            VkInstance _getInstance() const { return mInstance; }
             VulkanSwapChain* _getSwapChain();
+
 
             SIrrlichtCreationParameters mCreateParams; // ToDo: drop this
 
@@ -380,7 +389,7 @@ namespace irr
             VulkanCommandBuffer* mMainCommandBuffer = nullptr;
             CVulkanPlatform* mPlatform;
             u32 mNumDevices;
-            vk::DispatchLoaderDynamic VulkanDispatcherExt;
+            VulkanDynamicDispatcher VulkanDispatcherExt;
             std::map<CVulkanGLSLProgram*, std::map<CVulkanVertexDeclaration*, VulkanGraphicsPipelineState*>> mPipelines;
 
             irr::video::CVulkanGLSLProgram* m_defaultShader[(s32)E_VERTEX_TYPE::EVT_MAX_VERTEX_TYPE];
