@@ -35,7 +35,7 @@ include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-CreateLibrary("ZLIB" "${zlib_SRCS}" "STATIC" "" "")
+CreateLibrary("zlib" "${zlib_SRCS}" "STATIC" "" "")
 
 target_include_directories(ZLIB INTERFACE
 	${CMAKE_CURRENT_SOURCE_DIR}

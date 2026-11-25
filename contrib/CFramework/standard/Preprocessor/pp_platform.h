@@ -2,7 +2,7 @@
 #define __PP_PLATFORM_H__
 
 // if this not working check (MSVC header yvals.h (_CONST_DATA))
-#if _MSC_VER < 1900 && !defined(constexpr)
+#if !defined(__cpp_constexpr) && (!defined(_MSC_VER) || _MSC_VER < 1900)
 #   define constexpr static
 #endif
 

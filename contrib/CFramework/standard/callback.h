@@ -1,8 +1,10 @@
 #pragma once
+#include <string>
+
 #ifndef __SYSTEM_ASYNC_CALLBACK_H
 #define __SYSTEM_ASYNC_CALLBACK_H
 
-#include <standard\concurrentQueue.h>
+#include "concurrentQueue.h"
  /// ------------ BASE CLASSES ------------
 
 namespace System

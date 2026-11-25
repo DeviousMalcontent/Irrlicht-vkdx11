@@ -19,6 +19,13 @@
 #ifndef MANGOS_UNORDERED_MAP_H
 #define MANGOS_UNORDERED_MAP_H
 
+#ifdef IDENTITY
+  #undef IDENTITY
+#endif
+#ifdef _Identity
+  #undef _Identity
+#endif
+
 #  include <unordered_map>
 #  include <unordered_set>
 

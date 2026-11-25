@@ -1,3 +1,7 @@
+if(UNIX)
+    return()
+endif()
+
 SET(MODUL_LINKAGE "SHARED")
 SET(MODUL_LINK_LIBS "")
 SET(MODUL_LINK_FLAGS "")

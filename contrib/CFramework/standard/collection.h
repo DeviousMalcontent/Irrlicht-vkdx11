@@ -18,8 +18,8 @@
 #ifndef __Collection_H__
 #define __Collection_H__
 
-#include <standard/misc.h>
-#include <standard/events.h>
+#include "misc.h"
+#include "events.h"
 
 namespace System
 {
@@ -115,7 +115,7 @@ namespace System
                 if (WriteLock)
                     WriteLock();
 
-                StorageType::iterator i;
+                typename StorageType::iterator i;
                 if (GetContains(m_container, key, i))
                 {
                     delete i->second;
@@ -134,7 +134,7 @@ namespace System
             T* operator[](K key)
             {
                 T* ret = nullptr;
-                StorageType::iterator i;
+                typename StorageType::iterator i;
 
                 if (ReadLock)
                     ReadLock();
@@ -150,7 +150,7 @@ namespace System
 
             bool Exist(K key)
             {
-                StorageType::iterator i;
+                typename StorageType::iterator i;
                 if (ReadLock)
                     ReadLock();
 

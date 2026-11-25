@@ -1,7 +1,7 @@
 #ifndef __PP_SEQ_FOREACH_H__
 #define __PP_SEQ_FOREACH_H__
 
-#include <standard\Preprocessor\pp_basic.h>
+#include <standard/Preprocessor/pp_basic.h>
 
 // A "typical" mapping macro. PP_SEQ_FOR_EACH(macro, a, b, c, ...) expands to
 // macro(a) macro(b) macro(c) ...

@@ -1,6 +1,7 @@
 #ifndef __C_VIDEO_OPEN_GL_SHADER_H_INCLUDED__
 #define __C_VIDEO_OPEN_GL_SHADER_H_INCLUDED__
 
+#include <string>
 #include "IrrCompileConfig.h"
 
 #include "SIrrCreationParameters.h"

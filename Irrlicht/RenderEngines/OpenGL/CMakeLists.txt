@@ -8,6 +8,7 @@ endif(_IRR_DYNAMIC_)
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/GL
     #${OPENGL_INCLUDE_DIRS}
 )
 
@@ -16,13 +17,22 @@ file(GLOB_RECURSE RESOURCE_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.vert *.fr
 
 CreateLibrary(IrrOpenGL "${OpenGL_Source}" "${LIBTYPE}" "" "")
 add_dependencies(IrrOpenGL ZLIB)
-target_link_libraries (IrrOpenGL
+
+target_link_libraries ( IrrOpenGL PRIVATE
     OpenGL::GL
     ZLIB
-    Glslang)
+    Glslang
+)
 
-target_link_libraries (IrrOpenGL
-    CFramework)
+target_link_libraries ( IrrOpenGL PRIVATE
+    CFramework
+)
+
+target_link_libraries( IrrOpenGL PRIVATE 
+    X11 
+    Xext 
+    Xxf86vm
+)
 
 resource_build(
     TARGET "IrrOpenGL"
@@ -49,9 +59,6 @@ else()
     add_definitions(-D_IRR_COMPILE_WITH_OPENGL_)
     add_definitions(-DIRRLICHT_EXPORTS)
     
-    target_link_libraries (IrrOpenGL LINK_INTERFACE_LIBRARIES
-        irrlicht
-    )
 endif(_IRR_DYNAMIC_)
 
 set_target_properties(IrrOpenGL

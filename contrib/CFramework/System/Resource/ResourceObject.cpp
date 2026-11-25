@@ -16,6 +16,7 @@
 */
 
 #include "ResourceObject.h"
+#include "../../standard/Errors.h"
 
 #include <zlib.h>
 

@@ -1,6 +1,6 @@
 # The ZLIB license
 #
-# Copyright (c) 2015 André Netzeband
+# Copyright (c) 2015 Andrï¿½ Netzeband
 #
 # This software is provided 'as-is', without any express or implied
 # warranty. In no event will the authors be held liable for any damages
@@ -19,7 +19,11 @@
 # 3. This notice may not be removed or altered from any source distribution.
 #
 
-cmake_minimum_required(VERSION 2.6)
+if(UNIX)
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--start-group -lglslang -lglslang-default-resource-limits -lSPIRV-Tools-opt -lSPIRV-Tools -Wl,--end-group -lpthread")
+endif()
+
+cmake_minimum_required(VERSION 3.5...3.28)
 
 message(STATUS " -> Configure all examples:")
 

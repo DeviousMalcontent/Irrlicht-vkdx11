@@ -43,8 +43,8 @@
 #include <shared_mutex>
 //#include "sparsehash/dense_hash_map"
 
-#include "standard/Platform/Define.h"
-#include "standard/Preprocessor/pp_platform.h"
+#include "Define.h"
+#include "../Preprocessor/pp_platform.h"
 
 #if COMPILER == COMPILER_MICROSOFT
 #   ifndef __SHOW_STUPID_WARNINGS__
@@ -72,11 +72,11 @@
 #   endif
 #endif                                                      // __GNUC__
 
-#include "standard/UnorderedMapSet.h"
+#include "../UnorderedMapSet.h"
 
-#include "standard/BasicPrimities.h"
-#include "standard/misc.h"
-#include "System/rtString.h"
+#include "../BasicPrimities.h"
+#include "../misc.h"
+#include "../../System/rtString.h"
 
 #if PLATFORM == PLATFORM_WINDOWS
 #  if defined(__INTEL_COMPILER)

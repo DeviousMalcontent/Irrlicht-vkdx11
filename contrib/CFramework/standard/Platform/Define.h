@@ -21,7 +21,7 @@
 
 #include <cstdint>
 #include <sys/types.h>
-#include "standard/Platform/CompilerDefs.h"
+#include "CompilerDefs.h"
 
 #define MODUL_LITTLEENDIAN 0
 #define MODUL_BIGENDIAN    1
@@ -172,8 +172,10 @@ virtual void somefunc() _OVERRIDE_;
 #  define PACK_BEGIN(x) __pragma(pack(push, x))
 #  define PACK_END __pragma(pack(pop))
 #else //PLATFORM != PLATFORM_WINDOWS
-#  define PACK_BEGIN(x) _Pragma("pack(" ## STRINGIFY(x) ## ")")
-#  define PACK_END _Pragma("pack()")
+//#  define PACK_BEGIN(x) _Pragma("pack(" ## STRINGIFY(x) ## ")")
+//#  define PACK_END _Pragma("pack()")
+#  define PACK_BEGIN(x) _Pragma(STRINGIFY(pack(push, x)))
+#  define PACK_END      _Pragma(STRINGIFY(pack(pop)))
 #endif //PLATFORM
 
 typedef int64_t int64;
@@ -231,15 +233,26 @@ typedef uint64      QWORD;
 #  define TC_METARUNTIME_API MODUL_DLL_DECL
 #endif
 
-#ifdef TC_DYNAMIC_CFRAMEWORK
-#ifdef TC_API_EXPORT_CFRAMEWORK
-#  define TC_CFRAMEWORK_API TC_API_EXPORT
-#else
-#  define TC_CFRAMEWORK_API TC_API_IMPORT
+#ifndef WIN32
+#  undef TC_CFRAMEWORK_API
+#  define TC_CFRAMEWORK_API
+#  undef TC_API_EXPORT
+#  define TC_API_EXPORT
 #endif
-#else
-#  define TC_CFRAMEWORK_API MODUL_DLL_DECL
-#endif
+
+# ifdef WIN32
+#   ifdef TC_DYNAMIC_CFRAMEWORK
+#     ifdef TC_API_EXPORT_CFRAMEWORK
+#       define TC_CFRAMEWORK_API TC_API_EXPORT
+#     else
+#       define TC_CFRAMEWORK_API TC_API_IMPORT
+#     endif
+#   else
+#     define TC_CFRAMEWORK_API MODUL_DLL_DECL
+#   endif
+# else
+#   define TC_CFRAMEWORK_API
+# endif
 
 #ifdef TC_DYNAMIC_XUI
 #ifdef TC_API_EXPORT_XUI

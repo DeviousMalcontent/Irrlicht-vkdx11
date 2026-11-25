@@ -18,15 +18,25 @@
 #ifndef __SYSTEM_STRING_H__
 #define __SYSTEM_STRING_H__
 
+#ifdef max
+  #undef max
+#endif
+#ifdef min
+  #undef min
+#endif
+
 #include <stdarg.h>
 #include <algorithm>
 #include <string>
 #include <vector>
 #include <sstream>
+
+#include <fmt/printf.h>
+
 #include <codecvt>
 #include <locale>
 
-#include "standard/Platform/Define.h"
+#include "../standard/Platform/Define.h"
 
 #ifndef ATTR_NORETURN
 #  define ATTR_NORETURN

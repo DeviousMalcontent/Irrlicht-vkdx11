@@ -1405,7 +1405,12 @@ typedef string<c8> stringc;
 //! Typedef for wide character strings
 typedef string<wchar_t> stringw;
 
+#ifndef _MSC_VER
+//static stringc StrFormat(const char* fmt, ...) __attribute__ ((format (printf, 1, 2)))
+__attribute__ ((format (printf, 1, 2))) static stringc StrFormat(const char* fmt, ...)
+#else
 static stringc StrFormat(IRR_FORMAT_STRING(const char* fmt), ...) IRR_ATTR_PRINTF(1, 2)
+#endif
 {
     va_list ap;
     stringc result;

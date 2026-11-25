@@ -2,9 +2,16 @@ cmake_minimum_required(VERSION 3.6 FATAL_ERROR)
 
 project(IrrlichtDV VERSION 0.0.1 LANGUAGES CXX C)
 
+set(CMAKE_CXX_STANDARD 17 CACHE INTERNAL "Force C++17 standard globally")
+set(CMAKE_CXX_STANDARD_REQUIRED ON CACHE INTERNAL "Require C++17 standard globally")
+
+
 message("")
 message("Configuration:")
 message("")
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "CMake")
@@ -47,10 +54,10 @@ message("Source Dir               : ${CMAKE_SOURCE_DIR}")
 message("------------------------------------------------------------------------------------------------------------------")
 message("")
 message("")
- 
+
 set(CMAKE_SKIP_BUILD_RPATH FALSE)
 set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
-set(CMAKE_INSTALL_RPATH ${LIBS_DIR})
+set(CMAKE_INSTALL_RPATH "$ORIGIN;$ORIGIN/../../lib")
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 #######################################################################
@@ -65,11 +72,38 @@ ENDIF()
 include(FindPkgMacros REQUIRED)
 include(Dependencies REQUIRED)
 
+if(UNIX)
+    if(EXISTS "/usr/lib/x86_64-linux-gnu/libSPVRemapper.a")
+        add_library(SPVRemapper STATIC IMPORTED)
+        set_target_properties(SPVRemapper PROPERTIES IMPORTED_LOCATION "/usr/lib/x86_64-linux-gnu/libSPVRemapper.a")
+    else()
+        # Ubuntu 26.04+ glslang-dev 16.x merged/removed libSPVRemapper.a; provide an empty archive to satisfy link target
+        execute_process(COMMAND ${CMAKE_AR} rcs "${CMAKE_BINARY_DIR}/libSPVRemapper.a")
+        add_library(SPVRemapper STATIC IMPORTED)
+        set_target_properties(SPVRemapper PROPERTIES IMPORTED_LOCATION "${CMAKE_BINARY_DIR}/libSPVRemapper.a")
+    endif()
+
+    #add_library(SPIRV STATIC IMPORTED)
+    #set_target_properties(SPIRV PROPERTIES IMPORTED_LOCATION "/usr/lib/x86_64-linux-gnu/libSPIRV.a")
+    set(ENABLE_SPVREMAPPER OFF CACHE BOOL "" FORCE)
+    set(ENABLE_GLSLANG_BINARIES OFF CACHE BOOL "" FORCE)
+    set(ENABLE_CTEST OFF CACHE BOOL "" FORCE)
+    set(ENABLE_OPT OFF CACHE BOOL "" FORCE)
+    set(ENABLE_HLSL ON CACHE BOOL "" FORCE)
+    add_subdirectory(dep/SPIRV/Glslang)
+endif()
+
 message(STATUS "Complete Dependencies")
 message("")
 message("")
 
 enable_testing()
+
+if(UNIX)
+    set(ENABLE_GLSLANG_BINARIES OFF CACHE BOOL "" FORCE)
+    set(ENABLE_CTEST OFF CACHE BOOL "" FORCE)
+    set(ENABLE_OPT OFF CACHE BOOL "" FORCE)
+endif()
 
 message(STATUS "Prepare Source:")
 ADD_SUBDIRECTORY(dep)

@@ -25,6 +25,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -----------------------------------------------------------------------------
 */
+#ifndef WIN32
+#   define GLEW_STATIC 1
+#   define GL_GLEXT_LEGACY 1
+#   define GLX_GLXEXT_LEGACY 1
+#endif
+
 #ifndef __OPENGLSUPPORT_H__
 #define __OPENGLSUPPORT_H__
 
@@ -36,9 +42,14 @@ THE SOFTWARE.
 #if defined(_IRR_OPENGL_USE_EXTPOINTER_)
 #define GL_GLEXT_LEGACY 1
 #else
+#ifndef WIN32
+#define GL_GLEXT_PROTOTYPES 0 // Forces it off so it doesn't fight GLEW
+#else
 #define GL_GLEXT_PROTOTYPES 1
 #endif
+#endif
 
+#undef APIENTRY
 #include <GL/glew.h>
 
 #include "IrrCompileConfig.h"
@@ -65,12 +76,11 @@ THE SOFTWARE.
 #endif
 #endif
 
-#ifdef _WIN32
-#include <GL/wglew.h>
-#else
-#include <GL/glxew.h>
-#include <GL/glext.h>
-#endif
+# include <GL/glxew.h>
+# ifdef WIN32
+	//#include <GL/glext.h>
+# endif
+
 
 #ifndef APIENTRY
 #define APIENTRY

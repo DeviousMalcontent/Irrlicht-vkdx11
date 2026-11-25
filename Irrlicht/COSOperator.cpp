@@ -13,7 +13,9 @@
 #include <unistd.h>
 #ifndef _IRR_SOLARIS_PLATFORM_
 #include <sys/types.h>
-#include <sys/sysctl.h>
+#if defined(__APPLE__) || defined(__FreeBSD__)
+#  include <sys/sysctl.h>
+#endif
 #endif
 #endif
 

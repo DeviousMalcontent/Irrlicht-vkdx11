@@ -1,0 +1,13 @@
+{
+  "name": "Irrlicht Vulkan Dev Environment",
+  "image": "://microsoft.com",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y --no-install-recommends binutils-dev libiberty-dev glslang-dev spirv-tools libfmt-dev libglm-dev libjpeg-dev libpng-dev libx11-dev libxxf86vm-dev libxext-dev libgl1-mesa-dev libglu1-mesa-dev libvulkan-dev libglew-dev mesa-vulkan-drivers vulkan-tools xvfb imagemagick && sudo ar rcs /usr/lib/x86_64-linux-gnu/libglm.a",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  }
+}
