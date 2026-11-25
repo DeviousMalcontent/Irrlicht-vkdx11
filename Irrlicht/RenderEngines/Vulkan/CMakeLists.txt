@@ -14,6 +14,11 @@ LIST(APPEND CVulkan_Source ${RESOURCE_GENERATED_FILES})
 
 set(_IRR_DYNAMIC_ false)
 CreateLibrary("CVulkan" "${CVulkan_Source}" "${LIBTYPE}" "" "")
+target_include_directories(CVulkan PRIVATE
+    ${Vulkan_INCLUDE_DIR}
+    ${VULKAN_INCLUDE_DIR}
+)
+
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
