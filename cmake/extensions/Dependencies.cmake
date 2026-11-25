@@ -229,10 +229,15 @@ if(BUILD_DEPENDENCIES AND NOT EXISTS ${PROJECTDEPS_PATH})
 
     message(STATUS "Building freetype")
     file(DOWNLOAD
-        https://gnu.org
-        ${CMAKE_BINARY_DIR}/freetype-2.15.0.tar.gz)
+        https://downloads.sourceforge.net/freetype/freetype-2.15.0.tar.xz
+        ${CMAKE_BINARY_DIR}/freetype-2.15.0.tar.xz
+        STATUS FREETYPE_DL_STATUS)
+    list(GET FREETYPE_DL_STATUS 0 FREETYPE_DL_CODE)
+    if(NOT FREETYPE_DL_CODE EQUAL 0)
+        message(FATAL_ERROR "Failed to download FreeType: ${FREETYPE_DL_STATUS}")
+    endif()
     execute_process(COMMAND ${CMAKE_COMMAND}
-        -E tar xf freetype-2.15.0.tar.gz WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+        -E tar xf freetype-2.15.0.tar.xz WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
     # patch toolchain for iOS
     # execute_process(COMMAND ${CMAKE_COMMAND} -E copy
     #   ${CMAKE_SOURCE_DIR}/CMake/toolchain/ios.toolchain.xcode.cmake
