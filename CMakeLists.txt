@@ -73,9 +73,16 @@ include(FindPkgMacros REQUIRED)
 include(Dependencies REQUIRED)
 
 if(UNIX)
-    add_library(SPVRemapper STATIC IMPORTED)
-    set_target_properties(SPVRemapper PROPERTIES IMPORTED_LOCATION "/usr/lib/x86_64-linux-gnu/libSPVRemapper.a")
-    
+    if(EXISTS "/usr/lib/x86_64-linux-gnu/libSPVRemapper.a")
+        add_library(SPVRemapper STATIC IMPORTED)
+        set_target_properties(SPVRemapper PROPERTIES IMPORTED_LOCATION "/usr/lib/x86_64-linux-gnu/libSPVRemapper.a")
+    else()
+        # Ubuntu 26.04+ glslang-dev 16.x merged/removed libSPVRemapper.a; provide an empty archive to satisfy link target
+        execute_process(COMMAND ${CMAKE_AR} rcs "${CMAKE_BINARY_DIR}/libSPVRemapper.a")
+        add_library(SPVRemapper STATIC IMPORTED)
+        set_target_properties(SPVRemapper PROPERTIES IMPORTED_LOCATION "${CMAKE_BINARY_DIR}/libSPVRemapper.a")
+    endif()
+
     #add_library(SPIRV STATIC IMPORTED)
     #set_target_properties(SPIRV PROPERTIES IMPORTED_LOCATION "/usr/lib/x86_64-linux-gnu/libSPIRV.a")
     set(ENABLE_SPVREMAPPER OFF CACHE BOOL "" FORCE)
