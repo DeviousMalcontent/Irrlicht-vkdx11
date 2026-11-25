@@ -23,7 +23,7 @@ if(UNIX)
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--start-group -lglslang -lglslang-default-resource-limits -lSPIRV-Tools-opt -lSPIRV-Tools -Wl,--end-group -lpthread")
 endif()
 
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.5...3.28)
 
 message(STATUS " -> Configure all examples:")
 
