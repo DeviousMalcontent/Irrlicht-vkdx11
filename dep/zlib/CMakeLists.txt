@@ -45,3 +45,5 @@ set_target_properties(zlib
     PROPERTIES
       FOLDER
         "dep")
+
+add_custom_target(ZLIB DEPENDS zlib)
