@@ -25,6 +25,8 @@ endif()
 target_include_directories(CVulkan PRIVATE
     ${Vulkan_INCLUDE_DIR}
     ${VULKAN_INCLUDE_DIR}
+    ${CMAKE_SOURCE_DIR}/dep
+    ${CMAKE_SOURCE_DIR}/dep/SPIRV/SPIRV-Tools/include
 )
 
 include_directories(
