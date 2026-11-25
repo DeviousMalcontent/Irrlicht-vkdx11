@@ -17,7 +17,8 @@ CreateCxxPch("CFramework" "${CMAKE_CURRENT_SOURCE_DIR}/StdAfx.h" "${CMAKE_CURREN
 
 find_package(fmt CONFIG QUIET)
 if(fmt_FOUND)
-    link_libraries(fmt::fmt-header-only)
+    target_include_directories(CFramework PUBLIC $<TARGET_PROPERTY:fmt::fmt-header-only,INTERFACE_INCLUDE_DIRECTORIES>)
+    target_compile_definitions(CFramework PUBLIC $<TARGET_PROPERTY:fmt::fmt-header-only,INTERFACE_COMPILE_DEFINITIONS>)
 endif()
 
 target_include_directories(CFramework
