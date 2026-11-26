@@ -14,6 +14,9 @@ LIST(APPEND CVulkan_Source ${RESOURCE_GENERATED_FILES})
 
 set(_IRR_DYNAMIC_ false)
 CreateLibrary("CVulkan" "${CVulkan_Source}" "${LIBTYPE}" "" "")
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
 
 find_package(fmt CONFIG QUIET)
 if(fmt_FOUND)
