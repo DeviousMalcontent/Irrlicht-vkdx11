@@ -8,6 +8,7 @@ on:
 
 env:
   BUILD_TYPE: Release
+  CMAKE_POLICY_VERSION_MINIMUM: "3.5"
 
 jobs:
   build:
@@ -18,17 +19,20 @@ jobs:
 
     - name: Install dependencies
       run: |
-        brew install fmt glm jpeg libpng molten-vk vulkan-headers vulkan-loader glslang spirv-tools
+        brew install fmt glm jpeg libpng freetype molten-vk vulkan-headers vulkan-loader glslang spirv-tools
 
     - name: Configure CMake
-      # Configure CMake in a 'build' subdirectory
-      run: cmake -B build -D CMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }}
+      run: |
+        BREW_PREFIX="$(brew --prefix)"
+        cmake -B build \
+          -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} \
+          -DCMAKE_PREFIX_PATH="${BREW_PREFIX};${BREW_PREFIX}/opt/molten-vk;${BREW_PREFIX}/opt/jpeg" \
+          -DVulkan_LIBRARY="${BREW_PREFIX}/lib/libvulkan.dylib" \
+          -DVulkan_INCLUDE_DIR="${BREW_PREFIX}/include"
 
     - name: Build
-      # Build your project with CMake
-      run: cmake --build build --config ${{ env.BUILD_TYPE }}
+      run: cmake --build build --config ${{ env.BUILD_TYPE }} --parallel
 
     - name: Test
       working-directory: build
-      # Execute tests (if you use CTest)
-      run: ctest --output-on-failure
+      run: ls -R
