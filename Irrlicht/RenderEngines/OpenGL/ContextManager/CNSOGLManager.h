@@ -14,7 +14,9 @@
 #include "IContextManager.h"
 #include "SColor.h"
 
+#ifdef __OBJC__
 #import <AppKit/NSOpenGL.h>
+#endif
 
 namespace irr
 {
@@ -62,7 +64,11 @@ namespace video
 		SExposedVideoData PrimaryContext;
         SExposedVideoData CurrentContext;
         
+#ifdef __OBJC__
         NSOpenGLPixelFormat* PixelFormat;
+#else
+        void* PixelFormat;
+#endif
 	};
 }
 }

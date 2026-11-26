@@ -50,7 +50,7 @@ THE SOFTWARE.
 #endif
 
 #undef APIENTRY
-#include <GL/glew.h>
+#include "GL/glew.h"
 
 #include "IrrCompileConfig.h"
 
@@ -76,11 +76,12 @@ THE SOFTWARE.
 #endif
 #endif
 
-#ifndef _WIN32
-#include <GL/glxew.h>
-#else
+#if defined(_WIN32)
 #include "GL/wglew.h"
+#elif !defined(__APPLE__)
+#include <GL/glxew.h>
 #endif
+
 
 #ifndef APIENTRY
 #define APIENTRY
