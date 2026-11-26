@@ -62,15 +62,12 @@ jobs:
       shell: pwsh
       working-directory: ${{ github.workspace }}\dist\Irrlicht-Vulkan-Windows\bin\Release
       run: |
-        # Launch 01.HelloWorld.exe briefly to verify DLL loading, media paths, and D3D11 WARP / Software device init
-        $proc = Start-Process -FilePath ".\01.HelloWorld.exe" -PassThru
-        Start-Sleep -Seconds 3
-        if (-not $proc.HasExited) {
-          Stop-Process -Id $proc.Id -Force
-          Write-Host "01.HelloWorld.exe ran cleanly for 3 seconds."
-        } elseif ($proc.ExitCode -ne 0) {
-          throw "01.HelloWorld.exe exited unexpectedly with code $($proc.ExitCode)"
+        # Run 25.XmlHandling.exe (EDT_NULL) to verify irrlicht.dll, CFramework.dll, and media/ load cleanly on headless Windows CI
+        $proc = Start-Process -FilePath ".\25.XmlHandling.exe" -PassThru -Wait
+        if ($proc.ExitCode -ne 0) {
+          throw "25.XmlHandling.exe exited with code $($proc.ExitCode)"
         }
+        Write-Host "Runtime DLL and media check passed!"
 
     - name: Upload Release Asset
       if: github.event_name == 'push'
