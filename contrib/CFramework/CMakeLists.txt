@@ -6,7 +6,6 @@ SET(MODUL_LINK_FLAGS "")
 list(APPEND MODUL_LINK_LIBS
 PRIVATE
     ZLIB
-	glm
 )
 
 # Glob only and not recurse, there are other libs for that
@@ -14,6 +13,11 @@ file(GLOB_RECURSE MODUL_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp *.c *.cc
 
 CreateLibrary("CFramework" "${MODUL_SRCS}" "${MODUL_LINKAGE}" "${MODUL_LINK_LIBS}" "${MODUL_LINK_FLAGS}")
 CreateCxxPch("CFramework" "${CMAKE_CURRENT_SOURCE_DIR}/StdAfx.h" "${CMAKE_CURRENT_SOURCE_DIR}/StdAfx.cpp")
+
+find_package(glm CONFIG QUIET)
+if(TARGET glm::glm)
+    target_link_libraries(CFramework PRIVATE glm::glm)
+endif()
 
 find_package(fmt CONFIG QUIET)
 if(fmt_FOUND)

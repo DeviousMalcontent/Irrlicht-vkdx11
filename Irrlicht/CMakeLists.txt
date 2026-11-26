@@ -88,7 +88,6 @@ if(_IRR_DYNAMIC_)
   PUBLIC
     FREETYPE
   PRIVATE
-    glm
     libjpeg
     libpng
     ZLIB
@@ -214,6 +213,11 @@ if(UNIX)
 
     add_library(libpng INTERFACE)
     target_link_libraries(libpng INTERFACE png)
+endif()
+
+find_package(glm CONFIG QUIET)
+if(TARGET glm::glm)
+    target_link_libraries(irrlicht PRIVATE glm::glm)
 endif()
 
 target_link_libraries (irrlicht
