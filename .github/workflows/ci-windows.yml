@@ -41,7 +41,8 @@ jobs:
         New-Item -ItemType Directory -Force -Path "$DistDir\bin\Release" | Out-Null
 
         Copy-Item "build\bin\Release\*" "$DistDir\bin\Release\" -Recurse -Force
-        Copy-Item "media" "$DistDir\media" -Recurse -Force
+        # Copy-Item "media" "$DistDir\media" -Recurse -Force
+        Copy-Item "media" "$DistDir\bin\media" -Recurse -Force
 
         # Copy Noesis runtime DLL if present in repo
         Get-ChildItem -Path "dep\NoesisGui" -Filter "Noesis.dll" -Recurse -ErrorAction SilentlyContinue |

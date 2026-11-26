@@ -534,13 +534,22 @@ bool irr::video::CVulkanDriver::initDriver(void* param)
     blankImage = nullptr;
 
     System::IO::StandardDataSource fileMgr;
+    
+    auto openShaderFile = [&](const std::string& name) -> System::IO::IFileReader*
+    {
+        if (auto* f = fileMgr.OpenFile((std::string(_SOURCE_DIRECTORY "/Irrlicht/RenderEngines/Vulkan/GLSL/") + name).c_str()))
+            return f;
+        if (auto* f = fileMgr.OpenFile(("GLSL/" + name).c_str()))
+            return f;
+        return fileMgr.OpenFile(("../GLSL/" + name).c_str());
+    };
 
     {
         ShaderInitializerEntry shaderCI;
 
 #ifndef HAVE_CSYSTEM_EXTENSION
-        auto vertShader = fileMgr.OpenFile(_SOURCE_DIRECTORY "/Irrlicht/RenderEngines/Vulkan/GLSL/VkDefault.vert");
-        auto fragShader = fileMgr.OpenFile(_SOURCE_DIRECTORY "/Irrlicht/RenderEngines/Vulkan/GLSL/VkDefault.frag");
+        auto vertShader = openShaderFile("VkDefault.vert");
+        auto fragShader = openShaderFile("VkDefault.frag");
 #else
         auto vertShader = System::Resource::ResourceManager::Instance()->FindResource(System::URI("pack://application:,,,/CVulkan;/GLSL/VkDefault.vert", true))->ToMemoryStreamReader();
         auto fragShader = System::Resource::ResourceManager::Instance()->FindResource(System::URI("pack://application:,,,/CVulkan;/GLSL/VkDefault.frag", true))->ToMemoryStreamReader();
@@ -574,7 +583,7 @@ bool irr::video::CVulkanDriver::initDriver(void* param)
         ShaderInitializerEntry shaderCI;
 
 #ifndef HAVE_CSYSTEM_EXTENSION
-        auto vertShader = fileMgr.OpenFile(_SOURCE_DIRECTORY "/Irrlicht/RenderEngines/Vulkan/GLSL/VkDefaultSH.vert");
+        auto vertShader = openShaderFile("VkDefaultSH.vert");
 #else
         auto vertShader = System::Resource::ResourceManager::Instance()->FindResource(System::URI("pack://application:,,,/CVulkan;/GLSL/VkDefaultSH.vert", true))->ToMemoryStreamReader();
 #endif
@@ -591,8 +600,8 @@ bool irr::video::CVulkanDriver::initDriver(void* param)
         ShaderInitializerEntry shaderCI;
 
 #ifndef HAVE_CSYSTEM_EXTENSION
-        auto vertShader = fileMgr.OpenFile(_SOURCE_DIRECTORY "/Irrlicht/RenderEngines/Vulkan/GLSL/VkDefaultT2.vert");
-        auto fragShader = fileMgr.OpenFile(_SOURCE_DIRECTORY "/Irrlicht/RenderEngines/Vulkan/GLSL/VkDefault.frag");
+        auto vertShader = openShaderFile("VkDefaultT2.vert");
+        auto fragShader = openShaderFile("VkDefault.frag");
 #else
         auto vertShader = System::Resource::ResourceManager::Instance()->FindResource(System::URI("pack://application:,,,/CVulkan;/GLSL/VkDefaultT2.vert", true))->ToMemoryStreamReader();
         auto fragShader = System::Resource::ResourceManager::Instance()->FindResource(System::URI("pack://application:,,,/CVulkan;/GLSL/VkDefault.frag", true))->ToMemoryStreamReader();
@@ -612,8 +621,8 @@ bool irr::video::CVulkanDriver::initDriver(void* param)
         ShaderInitializerEntry shaderCI;
 
 #ifndef HAVE_CSYSTEM_EXTENSION
-        auto vertShader = fileMgr.OpenFile(_SOURCE_DIRECTORY "/Irrlicht/RenderEngines/Vulkan/GLSL/VkDefaultSK.vert");
-        auto fragShader = fileMgr.OpenFile(_SOURCE_DIRECTORY "/Irrlicht/RenderEngines/Vulkan/GLSL/VkDefault.frag");
+        auto vertShader = openShaderFile("VkDefaultSK.vert");
+        auto fragShader = openShaderFile("VkDefault.frag");
 #else
         auto vertShader = System::Resource::ResourceManager::Instance()->FindResource(System::URI("pack://application:,,,/CVulkan;/GLSL/VkDefaultSK.vert", true))->ToMemoryStreamReader();
         auto fragShader = System::Resource::ResourceManager::Instance()->FindResource(System::URI("pack://application:,,,/CVulkan;/GLSL/VkDefault.frag", true))->ToMemoryStreamReader();
