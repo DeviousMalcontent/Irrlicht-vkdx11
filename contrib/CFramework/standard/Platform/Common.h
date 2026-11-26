@@ -24,6 +24,8 @@
 # define __is_trivially_destructible(...) false
 #endif
 
+#include <cmath>
+
 #include <queue>
 #include <memory>
 #include <cstdint>
@@ -145,7 +147,7 @@ inline int finite(double x) { return _finite(x); }
 
 #define SZFMTD SIZEFMTD
 
-inline float finiteAlways(float f) { return finite(f) ? f : 0.0f; }
+inline float finiteAlways(float f) { return std::isfinite(f) ? f : 0.0f; }
 inline unsigned long atoul(char const* str) { return strtoul(str, nullptr, 10); }
 inline unsigned long long atoull(char const* str) { return strtoull(str, nullptr, 10); }
 

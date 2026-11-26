@@ -6,6 +6,10 @@
 #   include <GL/glew.h>
 #endif
 
+#ifndef __APPLE__
+#   include <GL/glew.h>
+#endif
+
 #define NOMINMAX
 
 #ifdef max
