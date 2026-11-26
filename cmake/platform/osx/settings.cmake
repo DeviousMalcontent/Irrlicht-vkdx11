@@ -13,6 +13,15 @@ if( NOT LIBSDIR )
   message(STATUS "OSX: Using default library directory")
 endif()
 
+set(BIN_DIR    ${CMAKE_BINARY_DIR}/bin)
+set(LIBS_DIR   ${CMAKE_BINARY_DIR}/lib)
+
+set(CMAKE_INSTALL_RPATH    "@loader_path")
+set(CMAKE_INSTALL_NAME_DIR ${LIBS_DIR})
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/OSX)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/OSX)
+
 # configure uninstaller
 configure_file(
   "${CMAKE_SOURCE_DIR}/cmake/platform/cmake_uninstall.in.cmake"

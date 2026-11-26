@@ -28,7 +28,7 @@ target_link_libraries ( IrrOpenGL PRIVATE
     CFramework
 )
 
-if(UNIX)
+if(UNIX AND NOT APPLE)
     target_link_libraries( IrrOpenGL PRIVATE 
         X11 
         Xext 
