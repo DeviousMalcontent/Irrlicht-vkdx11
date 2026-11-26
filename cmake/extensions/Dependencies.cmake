@@ -34,17 +34,20 @@ IF(UNIX)
         MESSAGE(FATAL_ERROR "Dynamic Library handler missing: Can't load dynamic library.")
     ENDIF (NOT LIBDL_FOUND)
 
-    #Required GCC  binutils-dev
-    # Look for binutils-dev. Needed for pretty stack printing.
-    FIND_PACKAGE(BFD REQUIRED)
-    IF (BFD_FOUND)
-        MESSAGE(STATUS "Binutils found.")
-        ADD_DEFINITIONS(-DHAVE_BFD)
-        SET(HAVE_BFD 1)
-    ELSE (BFD_FOUND)
-        MESSAGE(FATAL_ERROR "Binutils-dev missing: No pretty stack-trace printing.")
-    ENDIF (BFD_FOUND)
+    IF(NOT APPLE)
+        #Required GCC  binutils-dev
+        # Look for binutils-dev. Needed for pretty stack printing.
+        FIND_PACKAGE(BFD REQUIRED)
+        IF (BFD_FOUND)
+            MESSAGE(STATUS "Binutils found.")
+            ADD_DEFINITIONS(-DHAVE_BFD)
+            SET(HAVE_BFD 1)
+        ELSE (BFD_FOUND)
+            MESSAGE(FATAL_ERROR "Binutils-dev missing: No pretty stack-trace printing.")
+        ENDIF (BFD_FOUND)
+    ENDIF(NOT APPLE)
 ENDIF(UNIX)
+
 
 # PROJECT_DEPENDENCIES_DIR can be used to specify a single base
 # folder where the required dependencies may be found.
