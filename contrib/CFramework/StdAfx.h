@@ -1,12 +1,8 @@
 #ifndef __STDAFX_H__
 #define __STDAFX_H__
 
-#ifndef WIN32
+#if !defined(WIN32) && !defined(__APPLE__)
 #   define GLEW_STATIC 1
-#   include <GL/glew.h>
-#endif
-
-#ifndef __APPLE__
 #   include <GL/glew.h>
 #endif
 
