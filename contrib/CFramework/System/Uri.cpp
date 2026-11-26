@@ -1,4 +1,12 @@
+#ifndef WIN32
+#  ifdef TC_CFRAMEWORK_API
+#    undef TC_CFRAMEWORK_API
+#  endif
+#  define TC_CFRAMEWORK_API
+#endif
+
 #include "Uri.h"
+#include "../standard/Errors.h"
 
 System::URI::URI(std::string const& uriString, bool absolute)
 {

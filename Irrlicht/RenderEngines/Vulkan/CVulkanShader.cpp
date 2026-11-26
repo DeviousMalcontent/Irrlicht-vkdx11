@@ -13,9 +13,15 @@
 #include "glslang/MachineIndependent/reflection.h"
 #include "SPIRV/GlslangToSpv.h"
 #include "glslang/Include/Common.h"
+#include "glslang/Include/intermediate.h"
+#include "glslang/Public/ShaderLang.h"
+#include "glslang/MachineIndependent/localintermediate.h"
+
 
 using namespace irr;
 using namespace irr::video;
+
+typedef glslang::TIntermediate TIntermediate;
 
 extern EShLanguage GetCompileLang(E_SHADER_TYPES type);
 

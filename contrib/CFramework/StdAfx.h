@@ -1,5 +1,22 @@
-#ifndef _CFramework_DB_COMMON_H_
-#define _CFramework_DB_COMMON_H_
+#ifndef __STDAFX_H__
+#define __STDAFX_H__
+
+#ifndef WIN32
+#   define GLEW_STATIC 1
+#   include <GL/glew.h>
+#endif
+
+#define NOMINMAX
+
+#ifdef max
+  #undef max
+#endif
+#ifdef min
+  #undef min
+#endif
+
+#include <algorithm>
+#include <string>
 
 #include <atomic>
 #include <future>

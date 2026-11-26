@@ -10,7 +10,7 @@ set(BIN_DIR    ${CMAKE_INSTALL_PREFIX}/bin)
 set(LIBS_DIR   ${CMAKE_INSTALL_PREFIX}/lib)
 
 # For Unix systems set the rpath so that libraries are found
-set(CMAKE_INSTALL_RPATH    ${LIBS_DIR})
+set(CMAKE_INSTALL_RPATH    "$ORIGIN")
 set(CMAKE_INSTALL_NAME_DIR ${LIBS_DIR})
 
 if ( NOT dep)
@@ -39,3 +39,10 @@ elseif(CMAKE_C_COMPILER MATCHES "gcc" OR CMAKE_C_COMPILER MATCHES "cc")
 elseif(CMAKE_C_COMPILER MATCHES "icc")
   include(${CMAKE_SOURCE_DIR}/cmake/compiler/icc/settings.cmake)
 endif()
+
+set(CMAKE_SKIP_BUILD_RPATH FALSE)
+set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+set(CMAKE_INSTALL_RPATH "$ORIGIN")
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build/bin/Linux)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build/bin/Linux)

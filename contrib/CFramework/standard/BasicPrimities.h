@@ -31,7 +31,7 @@
 #define __BasicPrimites__
 
 //#include "Runtime/MetaProperty.h"
-#include "standard/Preprocessor/pp_platform.h"
+#include "Preprocessor/pp_platform.h"
 
 #define nameof STRINGIFY
 
@@ -154,8 +154,8 @@ namespace System
     template<typename T>
     T& Default() 
     {
-        static T default = T();
-        return default; 
+        static T default_value = T();
+        return default_value;
     };
 
     namespace Basic

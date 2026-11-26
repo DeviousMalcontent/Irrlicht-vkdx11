@@ -1,13 +1,19 @@
-AddBuildInLibrary(GLM glm)
-AddBuildInLibrary(JPEGLIB jpeglib)
-AddBuildInLibrary(LIBPNG libpng)
-add_subdirectory(threads)
-AddBuildInLibrary(ZLIB zlib)
+if(UNIX)
+    return()
+endif()
+
+AddBuildInLibrary( glm glm )
+AddBuildInLibrary( jpeglib jpeglib )
+AddBuildInLibrary( libpng libpng )
+add_subdirectory( threads )
+AddBuildInLibrary( zlib zlib )
 
 IF (BUILD_IN_USE_GLSLANG)
 
     # Set Glslang settings and connections
     SET(SPIRV-Headers_SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/SPIRV/SPIRV-Headers)
+
+    remove_definitions(-D_Identity -DIDENTITY)
     
     add_subdirectory(SPIRV/SPIRV-Tools)
     add_subdirectory(SPIRV/Glslang)

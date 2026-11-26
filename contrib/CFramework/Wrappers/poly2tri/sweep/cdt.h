@@ -32,6 +32,10 @@
 #ifndef CDT_H
 #define CDT_H
 
+#ifndef TC_CFRAMEWORK_API
+#  define TC_CFRAMEWORK_API
+#endif
+
 #include "advancing_front.h"
 #include "sweep_context.h"
 #include "sweep.h"

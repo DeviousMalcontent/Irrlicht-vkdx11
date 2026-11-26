@@ -1,6 +1,8 @@
 #ifndef __CDYNAMIC_VERTEX_BUFFER_OBJECT_H__
 #define __CDYNAMIC_VERTEX_BUFFER_OBJECT_H__
 
+#include <stdexcept>
+
 #include "IVertexBuffer.h"
 #include "SMaterial.h"
 #include "IMeshBuffer.h"

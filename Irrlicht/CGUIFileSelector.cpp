@@ -1,8 +1,12 @@
 #include "irrlicht.h"
 #include "CGUIFileSelector.h"
+#include "../contrib/CFramework/System/rtString.h"
 #include "irrString.h"
 //#include "extra_string.h"
 #include <locale>
+#include <codecvt>
+
+#include "System/rtString.h"
 
 using namespace irr;
 using namespace gui;
@@ -1089,7 +1093,10 @@ core::stringw CGUIFileSelector::translateDOS(core::stringw input)
 	//Ubutu should store the filenames in UTF8, Windows in UTF16
 	wchar_t out[255];
 	core::stringc in = core::stringc(input);
-	return core::stringw(utf8_to_wide(in.c_str()).c_str());
+	std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
+	std::wstring wide_str = converter.from_bytes(in.c_str());
+
+	return core::stringw(wide_str.c_str());
 #endif
 
 	core::stringw result=L"";

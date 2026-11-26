@@ -6,8 +6,8 @@
 #include <stdexcept>    // For runtime_error.
 #include <type_traits>
 
-#include <standard\Preprocessor\pp_platform.h>
-#include <standard\Preprocessor\pp_seq_foreach.h>
+#include <standard/Preprocessor/pp_platform.h>
+#include <standard/Preprocessor/pp_seq_foreach.h>
 
 template<typename ENUM,
     ENUM First,
