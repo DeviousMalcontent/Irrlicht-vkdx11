@@ -16,6 +16,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Install dependencies
+      run: |
+        brew install fmt glm jpeg libpng molten-vk vulkan-headers vulkan-loader glslang spirv-tools
+
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory
       run: cmake -B build -D CMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }}
