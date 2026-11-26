@@ -1,0 +1,83 @@
+name: CI - Windows
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ "windows_ci_build" ]
+  pull_request:
+    branches: [ "windows_ci_build" ]
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Vulkan SDK
+      uses: humbletim/setup-vulkan-sdk@v1.2.1
+      with:
+        vulkan-query-version: 1.4.304.0
+        vulkan-use-cache: true
+
+    - name: Install fmt via vcpkg
+      run: vcpkg install fmt:x64-windows
+
+    - name: Configure CMake
+      run: cmake -B ${{ github.workspace }}/build -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake"
+
+    - name: Build
+      run: cmake --build ${{ github.workspace }}/build --config ${{ env.BUILD_TYPE }} --parallel
+
+    - name: Create Windows Release
+      shell: pwsh
+      run: |
+        $DistDir = "${{ github.workspace }}\dist\Irrlicht-Vulkan-Windows"
+        New-Item -ItemType Directory -Force -Path "$DistDir\bin\Release" | Out-Null
+
+        Copy-Item "build\bin\Release\*" "$DistDir\bin\Release\" -Recurse -Force
+        Copy-Item "media" "$DistDir\media" -Recurse -Force
+
+        # Copy Noesis runtime DLL if present in repo
+        Get-ChildItem -Path "dep\NoesisGui" -Filter "Noesis.dll" -Recurse -ErrorAction SilentlyContinue |
+          Where-Object { $_.FullName -match "x86_64|x64|win64" } |
+          Select-Object -First 1 |
+          ForEach-Object { Copy-Item $_.FullName "$DistDir\bin\Release\" -Force }
+
+        # Launcher script matching run_helloworld.sh on Linux
+        @"
+        @echo off
+        cd /d "%~dp0bin\Release"
+        start "" 01.HelloWorld.exe %*
+        "@ | Set-Content -Path "$DistDir\run_helloworld.bat" -Encoding ASCII
+
+        Compress-Archive -Path $DistDir -DestinationPath "${{ github.workspace }}\Irrlicht-Vulkan-Windows.zip" -Force
+
+    - name: Test Runtime Launch
+      shell: pwsh
+      working-directory: ${{ github.workspace }}\dist\Irrlicht-Vulkan-Windows\bin\Release
+      run: |
+        # Run 25.XmlHandling.exe (EDT_NULL) to verify irrlicht.dll, CFramework.dll, and media/ load cleanly on headless Windows CI
+        $proc = Start-Process -FilePath ".\25.XmlHandling.exe" -PassThru -Wait
+        if ($proc.ExitCode -ne 0) {
+          throw "25.XmlHandling.exe exited with code $($proc.ExitCode)"
+        }
+        Write-Host "Runtime DLL and media check passed!"
+
+    - name: Upload Release Asset
+      if: github.event_name == 'push'
+      uses: softprops/action-gh-release@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ci_testing
+        prerelease: true
+        overwrite_files: true
+        make_latest: false
+        files: |
+          ${{ github.workspace }}/Irrlicht-Vulkan-Windows.zip

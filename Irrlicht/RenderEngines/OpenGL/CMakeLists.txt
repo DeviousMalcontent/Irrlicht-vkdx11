@@ -28,11 +28,13 @@ target_link_libraries ( IrrOpenGL PRIVATE
     CFramework
 )
 
-target_link_libraries( IrrOpenGL PRIVATE 
-    X11 
-    Xext 
-    Xxf86vm
-)
+if(UNIX)
+    target_link_libraries( IrrOpenGL PRIVATE 
+        X11 
+        Xext 
+        Xxf86vm
+    )
+endif()
 
 resource_build(
     TARGET "IrrOpenGL"

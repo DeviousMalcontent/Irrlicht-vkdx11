@@ -18,6 +18,24 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
+find_package(fmt CONFIG QUIET)
+if(fmt_FOUND)
+    target_include_directories(CVulkan PRIVATE $<TARGET_PROPERTY:fmt::fmt-header-only,INTERFACE_INCLUDE_DIRECTORIES>)
+    target_compile_definitions(CVulkan PRIVATE $<TARGET_PROPERTY:fmt::fmt-header-only,INTERFACE_COMPILE_DEFINITIONS>)
+    target_compile_options(CVulkan PRIVATE $<$<CXX_COMPILER_ID:MSVC>:/utf-8>)
+endif()
+
+target_include_directories(CVulkan PRIVATE
+    ${Vulkan_INCLUDE_DIR}
+    ${VULKAN_INCLUDE_DIR}
+    ${CMAKE_SOURCE_DIR}/dep
+    ${CMAKE_SOURCE_DIR}/dep/SPIRV/SPIRV-Tools/include
+)
+
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
 target_include_directories(CVulkan PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     "/usr/include/glslang"

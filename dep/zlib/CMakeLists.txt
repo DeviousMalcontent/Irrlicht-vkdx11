@@ -37,11 +37,14 @@ include_directories(
 
 CreateLibrary("zlib" "${zlib_SRCS}" "STATIC" "" "")
 
-target_include_directories(ZLIB INTERFACE
+target_include_directories(zlib INTERFACE
 	${CMAKE_CURRENT_SOURCE_DIR}
 	${CMAKE_CURRENT_SOURCE_DIR}/..)
 
-set_target_properties(ZLIB
+set_target_properties(zlib
     PROPERTIES
       FOLDER
         "dep")
+
+add_library(ZLIB INTERFACE)
+target_link_libraries(ZLIB INTERFACE zlib)
