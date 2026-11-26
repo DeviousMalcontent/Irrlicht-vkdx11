@@ -1684,9 +1684,12 @@ remove them if not needed.
 #include <mutex> // for std::mutex
 #include <atomic> // for std::atomic
 
-#if !defined(_WIN32)
+#if !defined(_WIN32) && !defined(__APPLE__)
     #include <malloc.h> // for aligned_alloc()
+#elif defined(__APPLE__)
+    #include <stdlib.h> // for aligned_alloc() / posix_memalign() on macOS
 #endif
+
 
 // Normal assert to check for programmer's errors, especially in Debug configuration.
 #ifndef VMA_ASSERT

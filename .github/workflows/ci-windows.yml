@@ -5,9 +5,9 @@ permissions:
 
 on:
   push:
-    branches: [ "windows_ci_build" ]
+    branches: [ "macos_ci_build" ]
   pull_request:
-    branches: [ "windows_ci_build" ]
+    branches: [ "macos_ci_build" ]
 
 env:
   BUILD_TYPE: Release
