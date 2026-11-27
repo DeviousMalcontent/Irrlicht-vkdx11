@@ -18,7 +18,8 @@ namespace irr
         CIrrDeviceMacOSX(const SIrrlichtCreationParameters& params)
             : CIrrDeviceStub(params)
         {
-            createDriver();
+            if (params.DriverType == video::EDT_NULL)
+                VideoDriver = video::createNullDriver(FileSystem, params.WindowSize);
             if (VideoDriver)
                 createGUIAndScene();
         }
