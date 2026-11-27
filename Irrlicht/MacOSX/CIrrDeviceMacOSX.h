@@ -15,8 +15,15 @@ namespace irr
     class CIrrDeviceMacOSX : public CIrrDeviceStub, public video::IImagePresenter
     {
     public:
-        CIrrDeviceMacOSX(const SIrrlichtCreationParameters& params);
-        virtual ~CIrrDeviceMacOSX();
+        CIrrDeviceMacOSX(const SIrrlichtCreationParameters& params)
+            : CIrrDeviceStub(params)
+        {
+            createDriver();
+            if (VideoDriver)
+                createGUIAndScene();
+        }
+
+        virtual ~CIrrDeviceMacOSX() {}
 
         virtual bool run() override { return !Close; }
         virtual void yield() override { usleep(0); }

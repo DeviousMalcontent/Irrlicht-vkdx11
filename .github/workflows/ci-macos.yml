@@ -29,8 +29,8 @@ jobs:
           -DCMAKE_PREFIX_PATH="${BREW_PREFIX};${BREW_PREFIX}/opt/molten-vk;${BREW_PREFIX}/opt/jpeg" \
           -DCMAKE_INCLUDE_PATH="${BREW_PREFIX}/include;${BREW_PREFIX}/opt/jpeg/include" \
           -DCMAKE_LIBRARY_PATH="${BREW_PREFIX}/lib;${BREW_PREFIX}/opt/jpeg/lib" \
-          -DCMAKE_EXE_LINKER_FLAGS="-L${BREW_PREFIX}/lib -L${BREW_PREFIX}/opt/jpeg/lib" \
-          -DCMAKE_SHARED_LINKER_FLAGS="-L${BREW_PREFIX}/lib -L${BREW_PREFIX}/opt/jpeg/lib" \
+          -DCMAKE_EXE_LINKER_FLAGS="-L${BREW_PREFIX}/lib -L${BREW_PREFIX}/opt/jpeg/lib -liconv" \
+          -DCMAKE_SHARED_LINKER_FLAGS="-L${BREW_PREFIX}/lib -L${BREW_PREFIX}/opt/jpeg/lib -liconv" \
           -DVulkan_LIBRARY="${BREW_PREFIX}/lib/libvulkan.dylib" \
           -DVulkan_INCLUDE_DIR="${BREW_PREFIX}/include"
           
