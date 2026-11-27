@@ -237,43 +237,43 @@ bool CNullDriver::initDriver()
     //Note: Predefine irrlicht default vertex declarations
     {
         irr::video::VertexDeclaration* vertDecl = GetVertexDeclaration(E_VERTEX_TYPE::EVT_STANDARD);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_POSITION,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertex, S3DVertex::Pos), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_NORMAL,        E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertex, S3DVertex::Normal), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_COLOR,         E_VERTEX_ELEMENT_TYPE::EVET_COLOUR, offsetof(S3DVertex, S3DVertex::Color), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2, offsetof(S3DVertex, S3DVertex::TCoords), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_POSITION,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertex, Pos), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_NORMAL,        E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertex, Normal), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_COLOR,         E_VERTEX_ELEMENT_TYPE::EVET_COLOUR, offsetof(S3DVertex, Color), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2, offsetof(S3DVertex, TCoords), 0);
         vertDecl->initialize();
     }
 
     {
         irr::video::VertexDeclaration* vertDecl = GetVertexDeclaration(E_VERTEX_TYPE::EVT_2TCOORDS);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_POSITION,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertex2TCoords, S3DVertex2TCoords::Pos), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_NORMAL,        E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertex2TCoords, S3DVertex2TCoords::Normal), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_COLOR,         E_VERTEX_ELEMENT_TYPE::EVET_COLOUR, offsetof(S3DVertex2TCoords, S3DVertex2TCoords::Color), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2, offsetof(S3DVertex2TCoords, S3DVertex2TCoords::TCoords), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2, offsetof(S3DVertex2TCoords, S3DVertex2TCoords::TCoords2), 1);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_POSITION,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertex2TCoords, Pos), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_NORMAL,        E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertex2TCoords, Normal), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_COLOR,         E_VERTEX_ELEMENT_TYPE::EVET_COLOUR, offsetof(S3DVertex2TCoords, Color), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2, offsetof(S3DVertex2TCoords, TCoords), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2, offsetof(S3DVertex2TCoords, TCoords2), 1);
         vertDecl->initialize();
     }
 
     {
         irr::video::VertexDeclaration* vertDecl = GetVertexDeclaration(E_VERTEX_TYPE::EVT_TANGENTS);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_POSITION,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertexTangents, S3DVertexTangents::Pos), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_NORMAL,        E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertexTangents, S3DVertexTangents::Normal), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_COLOR,         E_VERTEX_ELEMENT_TYPE::EVET_COLOUR, offsetof(S3DVertexTangents, S3DVertexTangents::Color), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2, offsetof(S3DVertexTangents, S3DVertexTangents::TCoords), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_BINORMAL,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertexTangents, S3DVertexTangents::Binormal), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TANGENT,       E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertexTangents, S3DVertexTangents::Tangent), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_POSITION,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertexTangents, Pos), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_NORMAL,        E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertexTangents, Normal), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_COLOR,         E_VERTEX_ELEMENT_TYPE::EVET_COLOUR, offsetof(S3DVertexTangents, Color), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2, offsetof(S3DVertexTangents, TCoords), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_BINORMAL,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertexTangents, Binormal), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TANGENT,       E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3, offsetof(S3DVertexTangents, Tangent), 0);
         vertDecl->initialize();
     }
 
     {
         irr::video::VertexDeclaration* vertDecl = GetVertexDeclaration(E_VERTEX_TYPE::EVT_SKINNING);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_POSITION,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3,      offsetof(S3DSkinningVertex, S3DSkinningVertex::Pos), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_NORMAL,        E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3,      offsetof(S3DSkinningVertex, S3DSkinningVertex::Normal), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_COLOR,         E_VERTEX_ELEMENT_TYPE::EVET_COLOUR,      offsetof(S3DSkinningVertex, S3DSkinningVertex::Color), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2,      offsetof(S3DSkinningVertex, S3DSkinningVertex::TCoords), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2,      offsetof(S3DSkinningVertex, S3DSkinningVertex::TCoords2), 1);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_BLEND_INDICES, E_VERTEX_ELEMENT_TYPE::EVET_UBYTE4,      offsetof(S3DSkinningVertex, S3DSkinningVertex::Bones), 0);
-        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_BLEND_WEIGHTS, E_VERTEX_ELEMENT_TYPE::EVET_UBYTE4_NORM, offsetof(S3DSkinningVertex, S3DSkinningVertex::Weights), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_POSITION,      E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3,      offsetof(S3DSkinningVertex, Pos), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_NORMAL,        E_VERTEX_ELEMENT_TYPE::EVET_FLOAT3,      offsetof(S3DSkinningVertex, Normal), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_COLOR,         E_VERTEX_ELEMENT_TYPE::EVET_COLOUR,      offsetof(S3DSkinningVertex, Color), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2,      offsetof(S3DSkinningVertex, TCoords), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_TEXTURE_COORD, E_VERTEX_ELEMENT_TYPE::EVET_FLOAT2,      offsetof(S3DSkinningVertex, TCoords2), 1);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_BLEND_INDICES, E_VERTEX_ELEMENT_TYPE::EVET_UBYTE4,      offsetof(S3DSkinningVertex, Bones), 0);
+        vertDecl->addElement(E_VERTEX_ELEMENT_SEMANTIC::EVES_BLEND_WEIGHTS, E_VERTEX_ELEMENT_TYPE::EVET_UBYTE4_NORM, offsetof(S3DSkinningVertex, Weights), 0);
         vertDecl->initialize();
     }
 
