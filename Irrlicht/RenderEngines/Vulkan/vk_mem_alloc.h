@@ -4103,6 +4103,9 @@ public:
     
     void WriteNumber(uint32_t n);
     void WriteNumber(uint64_t n);
+#ifdef __APPLE__
+    void WriteNumber(unsigned long n) { WriteNumber(static_cast<uint64_t>(n)); }
+#endif
     void WriteBool(bool b);
     void WriteNull();
 

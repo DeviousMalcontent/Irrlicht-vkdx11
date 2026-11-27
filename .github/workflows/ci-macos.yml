@@ -19,7 +19,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        brew install fmt glm jpeg libpng freetype glew molten-vk vulkan-headers vulkan-loader glslang spirv-tools
+        brew install fmt glm jpeg libpng freetype glew molten-vk vulkan-headers vulkan-loader spirv-tools
 
     - name: Configure CMake
       run: |
