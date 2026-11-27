@@ -5,9 +5,9 @@ permissions:
 
 on:
   push:
-    branches: [ "linux_ci_build" ]
+    branches: [ "linux_ci_build", "master" ]
   pull_request:
-    branches: [ "linux_ci_build" ]
+    branches: [ "linux_ci_build", "master" ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)

@@ -5,9 +5,9 @@ permissions:
 
 on:
   push:
-    branches: [ "windows_ci_build" ]
+    branches: [ "windows_ci_build", "master" ]
   pull_request:
-    branches: [ "windows_ci_build" ]
+    branches: [ "windows_ci_build", "master" ]
 
 env:
   BUILD_TYPE: Release

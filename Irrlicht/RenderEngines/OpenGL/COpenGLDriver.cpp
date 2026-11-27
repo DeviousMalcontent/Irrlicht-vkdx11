@@ -44,9 +44,10 @@
 #include "ContextManager/CWGLManager.h"
 #elif defined(_IRR_COMPILE_WITH_X11_DEVICE_)
 #include "ContextManager/CGLXManager.h"
+#elif defined(_IRR_COMPILE_WITH_OSX_DEVICE_)
+#include "ContextManager/CNSOGLManager.h"
 #else
 #error invalid platform
-#include "ContextManager/CNSOGLManager.h"
 #endif
 
 #ifdef HAVE_CSYSTEM_EXTENSION
