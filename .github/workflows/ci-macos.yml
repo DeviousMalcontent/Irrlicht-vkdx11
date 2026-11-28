@@ -8,35 +8,83 @@ on:
 
 env:
   BUILD_TYPE: Release
-  CMAKE_POLICY_VERSION_MINIMUM: "3.5"
+  CMAKE_POLICY_VERSION_MINIMUM: 3.5
 
 jobs:
   build:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Install dependencies
-      run: |
-        brew install fmt glm jpeg libpng freetype glew molten-vk vulkan-headers vulkan-loader spirv-tools
+      - name: Install dependencies
+        run: |
+          brew install ninja ccache fmt glm jpeg libpng freetype glew molten-vk vulkan-headers vulkan-loader spirv-tools
 
-    - name: Configure CMake
-      run: |
-        BREW_PREFIX="$(brew --prefix)"
-        cmake -B build \
-          -DCMAKE_BUILD_TYPE=Release \
-          -DCMAKE_PREFIX_PATH="${BREW_PREFIX};${BREW_PREFIX}/opt/molten-vk;${BREW_PREFIX}/opt/jpeg" \
-          -DCMAKE_INCLUDE_PATH="${BREW_PREFIX}/include;${BREW_PREFIX}/opt/jpeg/include" \
-          -DCMAKE_LIBRARY_PATH="${BREW_PREFIX}/lib;${BREW_PREFIX}/opt/jpeg/lib" \
-          -DCMAKE_EXE_LINKER_FLAGS="-L${BREW_PREFIX}/lib -L${BREW_PREFIX}/opt/jpeg/lib -liconv" \
-          -DCMAKE_SHARED_LINKER_FLAGS="-L${BREW_PREFIX}/lib -L${BREW_PREFIX}/opt/jpeg/lib -liconv" \
-          -DVulkan_LIBRARY="${BREW_PREFIX}/lib/libvulkan.dylib" \
-          -DVulkan_INCLUDE_DIR="${BREW_PREFIX}/include"
-          
-    - name: Build
-      run: cmake --build build --config ${{ env.BUILD_TYPE }} --parallel
+      - name: Cache ccache
+        uses: actions/cache@v4
+        with:
+          path: ~/Library/Caches/ccache
+          key: macos-ccache-${{ github.ref_name }}-${{ github.sha }}
+          restore-keys: |
+            macos-ccache-${{ github.ref_name }}-
+            macos-ccache-
 
-    - name: Test
-      working-directory: build
-      run: ls -R
+      - name: Configure CMake
+        run: |
+          BREW_PREFIX="$(brew --prefix)"
+          cmake -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_C_COMPILER_LAUNCHER=ccache \
+            -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+            -DCMAKE_BUILD_RPATH="@loader_path;${BREW_PREFIX}/lib;${BREW_PREFIX}/opt/jpeg/lib" \
+            -DCMAKE_PREFIX_PATH="${BREW_PREFIX};${BREW_PREFIX}/opt/molten-vk;${BREW_PREFIX}/opt/jpeg" \
+            -DCMAKE_INCLUDE_PATH="${BREW_PREFIX}/include;${BREW_PREFIX}/opt/jpeg/include" \
+            -DCMAKE_LIBRARY_PATH="${BREW_PREFIX}/lib;${BREW_PREFIX}/opt/jpeg/lib" \
+            -DCMAKE_EXE_LINKER_FLAGS="-L${BREW_PREFIX}/lib -L${BREW_PREFIX}/opt/jpeg/lib -liconv" \
+            -DCMAKE_SHARED_LINKER_FLAGS="-L${BREW_PREFIX}/lib -L${BREW_PREFIX}/opt/jpeg/lib -liconv" \
+            -DVulkan_LIBRARY="${BREW_PREFIX}/lib/libvulkan.dylib" \
+            -DVulkan_INCLUDE_DIR="${BREW_PREFIX}/include"
+
+      - name: Build
+        run: |
+          ccache --zero-stats
+          cmake --build build --config Release --parallel
+          ccache --show-stats
+
+      - name: Package macOS Release Bundle
+        run: |
+          BREW_PREFIX="$(brew --prefix)"
+          mkdir -p release_bundle/bin/OSX
+          cp -R bin/OSX/* release_bundle/bin/OSX/
+          cp -R media release_bundle/media
+
+          # Bundle MoltenVK & Vulkan loader so M1 MacBook can run Vulkan out of the box
+          cp "${BREW_PREFIX}/lib/libvulkan.1.dylib" release_bundle/bin/OSX/ || true
+          cp "${BREW_PREFIX}/opt/molten-vk/lib/libMoltenVK.dylib" release_bundle/bin/OSX/ || true
+          if [ -f "${BREW_PREFIX}/opt/molten-vk/etc/vulkan/icd.d/MoltenVK_icd.json" ]; then
+            sed 's|../../../lib/libMoltenVK.dylib|./libMoltenVK.dylib|g' \
+              "${BREW_PREFIX}/opt/molten-vk/etc/vulkan/icd.d/MoltenVK_icd.json" \
+              > release_bundle/bin/OSX/MoltenVK_icd.json
+          fi
+
+          # Create a quick-launch helper script for M1 testing
+          cat << 'EOF' > release_bundle/bin/OSX/run_example.sh
+          #!/bin/bash
+          DIR="$(cd "$(dirname "$0")" && pwd)"
+          export DYLD_LIBRARY_PATH="$DIR:$DYLD_LIBRARY_PATH"
+          export VK_ICD_FILENAMES="$DIR/MoltenVK_icd.json"
+          cd "$DIR"
+          exec "./${1:-01.HelloWorld}"
+          EOF
+          chmod +x release_bundle/bin/OSX/run_example.sh
+
+          tar -czvf Irrlicht-vkdx11-macOS-arm64.tar.gz -C release_bundle .
+
+      - name: Upload macOS Release Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Irrlicht-vkdx11-macOS-arm64
+          path: Irrlicht-vkdx11-macOS-arm64.tar.gz
+          retention-days: 14
