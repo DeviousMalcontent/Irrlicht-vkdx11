@@ -57,7 +57,7 @@ jobs:
         run: |
           BREW_PREFIX="$(brew --prefix)"
           mkdir -p release_bundle/bin/OSX
-          cp -R bin/OSX/* release_bundle/bin/OSX/
+          cp -R build/bin/OSX/* release_bundle/bin/OSX/
           cp -R media release_bundle/media
 
           # Bundle MoltenVK & Vulkan loader so M1 MacBook can run Vulkan out of the box
