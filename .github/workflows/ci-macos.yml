@@ -88,3 +88,16 @@ jobs:
           name: Irrlicht-vkdx11-macOS-arm64
           path: Irrlicht-vkdx11-macOS-arm64.tar.gz
           retention-days: 14
+    
+      - name: Upload Release Asset
+        if: github.event_name == 'push'
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ci_testing
+          prerelease: false
+          overwrite_files: true
+          make_latest: false
+          files: |
+           ${{ github.workspace }}/Irrlicht-vkdx11-macOS-arm64.tar.gz
